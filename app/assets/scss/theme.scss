@@ -1,0 +1,20 @@
+.container-fluid.bg {
+  background-color: $default-bg;
+}
+.pos-hero-image {
+  height: 100%;
+  width: 563px;
+  :before {
+    content: '';
+    background-color: rgba(86,136,211,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -moz-border-radius: 5px 0 0 5px;
+    -mso-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+  }
+}
+

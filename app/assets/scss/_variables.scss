@@ -20,15 +20,16 @@ $default-success:         #37c936;
 $default-info :           #0f9aee;
 $default-warning:         #ffcc00;
 $default-danger:          #ff3c7e;
+$default-bg:              #F8F9FB;
 
 //==================================
 // 	Inverse color
 //==================================
 $inverse-primary :        lighten($default-primary, 30%);
-$inverse-success :        lighten($default-success, 45%); 	   
-$inverse-info :           lighten($default-info, 45%);         
-$inverse-warning :        lighten($default-warning, 45%);	   
-$inverse-danger :         lighten($default-danger, 35%);	   
+$inverse-success :        lighten($default-success, 45%);
+$inverse-info :           lighten($default-info, 45%);
+$inverse-warning :        lighten($default-warning, 45%);
+$inverse-danger :         lighten($default-danger, 35%);
 
 //==================================
 // 	Misc
