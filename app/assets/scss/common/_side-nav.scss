@@ -6,7 +6,7 @@
     bottom: 0px;
     position: fixed;
     overflow: hidden;
-    @include transition(all 0.2s ease); 
+    @include transition(all 0.2s ease);
 	@include print {
 		display: none;
 	}
@@ -14,25 +14,25 @@
 	.side-nav-inner {
 		position: relative;
 		height: 100%;
-		
+
 		.side-nav-logo {
 			padding: 0px 20px;
 			border-bottom: 1px solid $border-color;
 			border-right: 1px solid $border-color;
 			line-height: 0;
-			@include transition(all 0.2s ease); 
+			@include transition(all 0.2s ease);
 
 			> a {
     			display: inline-block;
     			max-width: 150px;
     			width: 100%;
-				
+
 				.logo {
 					background-repeat: no-repeat;
 					background-position: center left;
 				    display: inline-block;
 				    width: 100%;
-				    min-height: calc(#{$header-height} - 1px); 
+				    min-height: calc(#{$header-height} - 1px);
 
 				    &.logo-white {
 				    	display: none;
@@ -59,7 +59,7 @@
 				}
 			}
 		}
-		
+
 		.side-nav-menu {
 			position: relative;
 			list-style: none;
@@ -69,13 +69,13 @@
 			border-right: 1px solid $border-color;
 			height: calc(100vh - #{$header-height});
 			@include clearfix;
-			
+
 			li {
 				position: relative;
 				display: block;
-				
+
 				&.dropdown {
-					
+
 					.arrow {
 						position: absolute;
 						right: 50px;
@@ -87,7 +87,7 @@
 							right: 25px;
 						}
 					}
-					
+
 					&.open {
 
 						> a {
@@ -106,7 +106,7 @@
 							display: block;
 
 							.dropdown-menu {
-								padding-left: 20px;	
+								padding-left: 20px;
 							}
 
 							.arrow {
@@ -115,11 +115,11 @@
 						}
 					}
 				}
-				
+
 				a {
 					color: $default-text-color;
-					@include transition(all 0.3s ease); 
-					
+					@include transition(all 0.3s ease);
+
 					&:hover,
 					&:focus {
 						text-decoration: none;
@@ -131,11 +131,11 @@
 					}
 				}
 			}
-			
+
 			>li {
-				
+
 				&.dropdown {
-					
+
 					ul {
 						&.dropdown-menu {
 							position: relative;
@@ -147,9 +147,9 @@
 							padding-top: 0px;
 							background-color: transparent;
 							float: none;
-							
+
 							> li {
-								
+
 								> a {
 									padding: 10px 15px;
 
@@ -170,7 +170,7 @@
 						}
 					}
 				}
-				
+
 				> a{
 					position: relative;
 					display: block;
@@ -178,7 +178,7 @@
 					font-weight: 500;
 					font-size: 15px;
 					white-space: nowrap;
-					
+
 					.icon-holder {
 						display: inline-block;
 						height: 35px;
@@ -190,7 +190,7 @@
 						margin-right: 14px;
 						font-size: 17px;
 						border-radius: 6px;
-						@include transition(all 0.3s ease); 
+						@include transition(all 0.3s ease);
 					}
 				}
 			}
@@ -199,22 +199,22 @@
 
 	@include screen-laptop-only {
 		width: $collapsed-size;
-	
+
 		.side-nav-inner {
-			
+
 			.side-nav-logo {
 				border-bottom: 1px solid transparent;
 				padding: 0px;
-				
+
 				a {
-					
+
 					.logo {
 						width: $collapsed-size;
 						background-position: center center;
 					}
 
 					.logo-dark {
-						background-image: url('../images/logo/logo-sm.png') !important;
+						background-image: url('../images/logo/logo-sm.svg') !important;
 					}
 
 					.logo-white {
@@ -248,8 +248,8 @@
 								display: none !important;
 							}
 						}
-					}	
-				}	
+					}
+				}
 			}
 		}
 
@@ -257,20 +257,20 @@
 			width: $offscreen-size;
 
 			.side-nav-inner {
-			
+
 				.side-nav-logo {
 					padding: 0px 20px;
 					border-bottom: 1px solid $border-color;
-					
+
 					a {
-						
+
 						.logo {
 							width: 150px;
 							background-position: center left;
 						}
 
 						.logo-dark {
-							background-image: url('../images/logo/logo.png') !important;
+							background-image: url('../images/logo/logo.svg') !important;
 						}
 
 						.logo-white {
@@ -303,8 +303,8 @@
 							>ul.dropdown-menu {
 								display: block !important;
 							}
-						}	
-					}	
+						}
+					}
 				}
 			}
 		}
@@ -312,8 +312,8 @@
 
 	@include screen-tablet {
 		left: -$offscreen-size;
-		width: calc(#{$offscreen-size} - 30px); 
-	} 
+		width: calc(#{$offscreen-size} - 30px);
+	}
 }
 
 .is-collapsed {
@@ -321,22 +321,22 @@
 	.side-nav {
 		@include screen-laptop-above {
 			width: $collapsed-size;
-		
+
 			.side-nav-inner {
-				
+
 				.side-nav-logo {
 					border-bottom: 1px solid transparent;
 					padding: 0px;
-					
+
 					>a {
-						
+
 						.logo {
 							width: $collapsed-size;
 							background-position: center center;
 						}
 
 						.logo-dark {
-							background-image: url('../images/logo/logo-sm.png') !important;
+							background-image: url('../images/logo/logo-sm.svg') !important;
 						}
 
 						.logo-white {
@@ -370,8 +370,8 @@
 									display: none !important;
 								}
 							}
-						}	
-					}	
+						}
+					}
 				}
 			}
 
@@ -379,20 +379,20 @@
 				width: $offscreen-size;
 
 				.side-nav-inner {
-				
+
 					.side-nav-logo {
 						padding: 0px 20px;
 						border-bottom: 1px solid $border-color;
-						
+
 						a {
-							
+
 							.logo {
 								width: 150px;
 								background-position: center left;
 							}
 
 							.logo-dark {
-								background-image: url('../images/logo/logo.png') !important;
+								background-image: url('../images/logo/logo.svg') !important;
 							}
 
 							.logo-white {
@@ -425,8 +425,8 @@
 								>ul.dropdown-menu {
 									display: block !important;
 								}
-							}	
-						}	
+							}
+						}
 					}
 				}
 			}
@@ -436,20 +436,20 @@
 			width: $offscreen-size;
 
 			.side-nav-inner {
-			
+
 				.side-nav-logo {
 					padding: 0px 20px;
 					border-bottom: 1px solid $border-color;
-					
+
 					>a {
-						
+
 						.logo {
 							width: 150px;
 							background-position: center left;
 						}
 
 						.logo-dark {
-							background-image: url('../images/logo/logo.png') !important;
+							background-image: url('../images/logo/logo.svg') !important;
 						}
 
 						.logo-white {
@@ -482,15 +482,15 @@
 							> ul.dropdown-menu {
 								display: block !important;
 							}
-						}	
-					}	
+						}
+					}
 				}
 			}
 		}
 
 		@include screen-tablet {
 			left: 0px;
-		}	
+		}
 	}
 }
 
@@ -506,7 +506,7 @@
 
 			a {
 				.logo {
-					
+
 				    &.logo-white {
 				    	display: block;
 				    }
@@ -538,7 +538,7 @@
 		 					}
 		 				}
 		 			}
-		 		}	
+		 		}
 
 		 		>li {
 		 			&.dropdown {
@@ -567,7 +567,7 @@
 		 			}
 		 		}
 		 	}
-		}	
+		}
 	}
 
 	&.is-collapsed {
@@ -576,8 +576,8 @@
 			&:hover {
 				.side-nav-logo {
 					border-bottom: 1px solid $side-nav-dark-border;
-				}	
+				}
 			}
 		}
-	}	
+	}
 }
