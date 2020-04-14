@@ -1,5 +1,25 @@
+/* Common Overrides */
 .container-fluid.bg {
   background-color: $default-bg;
+}
+.checkbox {
+  input[type=checkbox] {
+    width: 15px;
+
+    +label {
+
+      &:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+      }
+    }
+}
+/* Sign in Page */
+.sign-in {
+  h2 {
+    color: #5688D3;
+  }
 }
 .pos-hero-image {
   height: 100%;
@@ -17,6 +37,8 @@
     -webkit-border-radius: 5px 0 0 5px;
   }
 }
+
+/* Business list Page */
 .business-list {
   .card-block {
     &:hover {

@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
     <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="../bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css" />
+    <link rel="stylesheet" href="../bower_components/nvd3/build/nv.d3.min.css" />
+
     <!-- core css -->
     <link href="assets/css/ei-icon.css" rel="stylesheet">
     <link href="assets/css/themify-icons.css" rel="stylesheet">
@@ -25,48 +29,46 @@
 <body>
     <div class="app">
         <div class="authentication">
-            <div class="mr-auto ml-auto full-height height-100">
-                <div class="vertical-align full-height">
-                    <div class="table-cell">
-                        <div class="col-md-8 mr-auto ml-auto">
-                            <div class="sign-in">
-                                <div class="row no-mrg-horizon">
-                                    <div class="col-md-7 no-pdd-horizon hidden-xs">
-                                        <div class="height-100 bg pos-hero-image rounded-left" style="background-image: url('assets/images/login/hero-login.png');">
-                                            <div class="img-caption">
-                                                <h1 class="caption-title">POS Support Dashboard</h1>
-                                                <p class="caption-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="col-md-8 ml-auto mr-auto mrg-top-20-vh">
+                <div class="sign-in">
+                    <div class="row no-mrg-horizon">
+                        <div class="col-md-7 no-pdd-horizon pos-hero-image hidden-xs">
+                            <div class="height-full-60 bg rounded-left" style="background-image: url('assets/images/login/hero-login.png')">
+                                <div class="img-caption">
+                                    <h1 class="caption-title">POS Support Dashboard</h1>
+                                    <p class="caption-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 no-pdd-horizon">
+                            <div class="height-full-60 bg-white height-100 rounded-right">
+                                <div class="vertical-align height-full-60 pdd-horizon-15">
+                                    <div class="table-cell">
+                                        <div class="pdd-horizon-15">
+                                            <div class="text-center pdd-top-10">
+                                                <img class="img-responsive thumb-img img-circle inline-block" src="https://res.cloudinary.com/punchh/image/upload/fl_lossy,q_auto/v1/static/punchh-icon-small.png" alt="">
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 no-pdd-horizon">
-                                        <div class="bg-white rounded-right">
-                                            <div class="vertical-align pdd-horizon-30">
-                                                <div class="table-cell">
-                                                    <div class="text-center pdd-top-10">
-                                                        <img class="img-responsive thumb-img img-circle inline-block" src="https://res.cloudinary.com/punchh/image/upload/fl_lossy,q_auto/v1/static/punchh-icon-small.png" alt="">
-                                                    </div>
-                                                    <h2 class="font-size-20 no-mrg-vertical">Login</h2>
-                                                    <form class="pdd-top-10">
-                                                        <div class="form-group mrg-btm-10">
-                                                            <label class="text-normal text-bold text-dark">Email Address</label>
-                                                            <input type="email" class="form-control rounded" placeholder="User name">
-                                                        </div>
-                                                        <div class="form-group mrg-btm-10">
-                                                            <label class="text-normal text-bold text-dark">Password</label>
-                                                            <input type="password" class="form-control rounded"no-mrg-vertical placeholder="Password">
-                                                        </div>
-                                                        <div class="checkbox font-size-13 inline-block no-mrg-vertical no-pdd-vertical">
-                                                            <input id="agreement" name="agreement" type="checkbox">
-                                                            <label for="agreement" class=" font-size-11">Remember me for 2 weeks?</label>
-                                                        </div>
-                                                        <div class="pull-right font-size-11">
-                                                            <a href="">Forgot Password?</a>
-                                                        </div>
-                                                        <button class="btn btn-info btn-block rounded">Login</button>
-                                                    </form>
+                                            <h2 class="font-size-20 text-bold">Login</h2>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label class="text-normal text-bold text-dark">Email Address</label>
+                                                    <input type="email" class="form-control rounded" placeholder="User name">
                                                 </div>
-                                            </div>
+                                                <div class="form-group">
+                                                    <label class="text-normal text-bold text-dark">Password</label>
+                                                    <input type="password" class="form-control rounded"no-mrg-vertical placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="checkbox font-size-13 inline-block no-mrg-vertical no-pdd-vertical">
+                                                        <input id="agreement" name="agreement" type="checkbox">
+                                                        <label for="agreement" class=" font-size-11">Remember me for 2 weeks?</label>
+                                                    </div>
+                                                    <div class="pull-right font-size-11">
+                                                        <a href=""><u>Forgot Password?</u></a>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-info btn-block rounded">LOGIN</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -95,6 +97,7 @@
     <!-- page js -->
 
 </body>
+<!-- Css need to remove before go live as added SCCS file -->
 <style type="text/css">
     .pos-hero-image:before {
       content: '';
@@ -107,6 +110,19 @@
       -moz-border-radius: 5px 0 0 5px;
       -mso-border-radius: 5px 0 0 5px;
       -webkit-border-radius: 5px 0 0 5px;
+    }
+    .height-full-60 {
+        height: 60vh;
+    }
+    .mrg-top-20-vh {
+        margin-top: 20vh;
+    }
+    .checkbox input[type=checkbox] + label:before {
+        height: 15px;
+        width: 15px;
+    }
+    .sign-in h2 {
+        color: #5688D3;
     }
 </style>
 </html>
