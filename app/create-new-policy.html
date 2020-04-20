@@ -320,255 +320,681 @@
                 <div class="main-content">
                     <div class="container-fluid">
                         <div class="page-title">
-                            <h4>Form Wizard</h4>
+                            <h4 class="text-bold">SmashBurger Default Policy</h4>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <div class="row relative">
-                                            <form id="shipping-form" class="width-100" method="get">
-                                                <div id="rootwizard" class="form-wizard col-md-10 ml-auto mr-auto">
-                                                    <ul class="nav nav-pills nav-fill">
-                                                        <li class="nav-item">
-                                                            <a href="#step1" data-toggle="tab">
-                                                                <span class="step">1</span>
-                                                                <span class="title">Your Order</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#step2" data-toggle="tab">
-                                                                <span class="step">2</span>
-                                                                <span class="title">Shipping Info</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#step3" data-toggle="tab">
-                                                                <span class="step">3</span>
-                                                                <span class="title">Payment Method</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#step4" data-toggle="tab">
-                                                                <span class="step">4</span>
-                                                                <span class="title">Confirmation</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <div id="bar" class="progress progress-info" style="width: 75%">
-                                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-                                                    </div>
-                                                    <div class="tab-content">
-                                                        <div id="step1" class="tab-pane fade in active">
-                                                            <div class="row">
-                                                                <div class="col-md-8">
-                                                                    <table class="table table-hover product-table">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th></th>
-                                                                                <th>Item</th>
-                                                                                <th>Quantity</th>
-                                                                                <th>Price</th>
-                                                                                <th class="text-right">Subtotal</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img class="img-fluid" src="assets/images/others/product-1.jpg" alt="">
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5158/P</p>
-                                                                                    <b>Size: Medium</b>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20">1</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20">$180.00</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20 text-right">$180.00</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img class="img-fluid" src="assets/images/others/product-2.jpg" alt="">
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5168</p>
-                                                                                    <b>Size: Medium</b>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20">4</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20">$200.00</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20 text-right">$800.00</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img class="img-fluid" src="assets/images/others/product-3.jpg" alt="">
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5168</p>
-                                                                                    <b>Size: Medium</b>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20">2</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20">$180.00</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="pdd-top-20 text-right">$360.00</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <div class="pdd-horizon-30">
-                                                                        <div class="card">
-                                                                            <div class="card-block">
-                                                                                <h4 class="card-title mrg-btm-30">Summary</h4>
-                                                                                <div class="border bottom">
-                                                                                    <p>Subtotal: <span class="pull-right">$1,340.00</span></p>
-                                                                                    <p>Shipping: <span class="pull-right">$100.00</span></p>
-                                                                                    <p class="mrg-top-20">Discount: <span class="pull-right">$60</span></p>
-                                                                                </div>
-                                                                                <p class="mrg-top-20">Grand Total: <span class="pull-right text-dark font-size-18"><b>$1380.00</b></span></p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                        <div class="relative">
+                            <form id="default-policy" class="width-100" method="get">
+                                <div id="rootwizard" class="form-wizard ml-auto mr-auto">
+                                    <ul class="nav nav-pills nav-fill">
+                                        <li class="nav-item">
+                                            <a href="#generalinfo" data-toggle="tab">
+                                                <span class="step">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title text-uppercase">General info</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#createpolicy" data-toggle="tab">
+                                                <span class="step">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title text-uppercase">create default policy</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#review-confirm" data-toggle="tab">
+                                                <span class="step">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title text-uppercase">Review & confirm</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#submit-policy" data-toggle="tab">
+                                                <span class="step">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title text-uppercase">Done</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div id="bar" class="progress progress-info" style="width: 75%">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div id="generalinfo" class="tab-pane fade in active">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h4 class="card-title text-uppercase mb-0 text-bold">General Info</h4>
+                                                    <p>Enter your Brand Policy Name and Description.</p>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="text-dark text-semibold">Name</label>
+                                                                <input type="text" class="form-control rounded" name="firstName">
+                                                                <span class="text-muted font-size-12 mb-0">Enter the policy name.</span>
                                                             </div>
-                                                        </div>
-                                                        <div id="step2" class="tab-pane fade">
-                                                            <div class="row">
-                                                                <div class="col-md-10 mr-auto ml-auto">
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group">
-                                                                                <label>First Name</label>
-                                                                                <input type="text" class="form-control" name="firstName">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group">
-                                                                                <label>Last Name</label>
-                                                                                <input type="text" class="form-control" name="lastName">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <div class="form-group">
-                                                                                <label>Email</label>
-                                                                                <input type="email" class="form-control" name="email">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <div class="form-group">
-                                                                                <label>Address</label>
-                                                                                <input type="text" class="form-control" name="address">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-4">
-                                                                            <div class="form-group">
-                                                                                <label>State</label>
-                                                                                <input type="text" class="form-control" name="state">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-4">
-                                                                            <div class="form-group">
-                                                                                <label>City</label>
-                                                                                <input type="text" class="form-control" name="city">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-4">
-                                                                            <div class="form-group">
-                                                                                <label>Post Code</label>
-                                                                                <input type="text" class="form-control" name="postcode">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <div class="form-group">
-                                                                                <label>Remarks</label>
-                                                                                <textarea class="form-control" rows="3"></textarea>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="step3" class="tab-pane fade">
-                                                            <div class="row">
-                                                                <div class="col-md-8 mr-auto ml-auto">
-                                                                    <p class="font-size-18">
-                                                                        <span>Total Payment Amount: </span>
-                                                                        <b class="text-dark">$1380.00</b>
-                                                                        <img class="pull-right" src="assets/images/others/credit-card.png" alt="">
-                                                                    </p>
-                                                                    <div class="mrg-top-40">
-                                                                        <div class="row">
-                                                                            <div class="form-group col-md-12">
-                                                                                <label><span class="pdd-left-5"><b>CREDIT CARD NUMBER</b></span></label>
-                                                                                <input type="text" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" class="form-control" placeholder="_ _ _ _ - _ _ _ _ - _ _ _ _ - _ _ _ _ " name="creditCard">
-                                                                            </div>
-                                                                            <div class="form-group col-md-6">
-                                                                                <label><span class="pdd-left-5"><b>CVV Code</b></span></label>
-                                                                                <input type="text" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" class="form-control" placeholder="_ _ _" name="cvv">
-                                                                            </div>
-                                                                            <div class="form-group col-md-6">
-                                                                                <label><span class="pdd-left-5"><b>Expired Date</b></span></label>
-                                                                                <input type="text" class="form-control" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" placeholder="MM/YY" name="mmyy">
-                                                                            </div>
-                                                                            <div class="form-group col-md-12">
-                                                                                <label><span class="pdd-left-5"><b>Cardholder Name</b></span></label>
-                                                                                <input type="text" class="form-control" placeholder="Card Name" name="cardName">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="step4" class="tab-pane fade">
-                                                            <div class="row">
-                                                                <div class="col-md-6 mr-auto ml-auto">
-                                                                    <img class="img-fluid d-block mrg-horizon-auto" src="assets/images/others/cart.png" alt="">
-                                                                    <div class="text-center">
-                                                                        <h2>Thanks for Your Order</h2>
-                                                                        <p>Your order has been placed successfully.
-                                                                            <br> Click learn more to know more about the order status.
-                                                                        </p>
-                                                                        <button class="btn btn-info btn-inverse btn-lg">Learn More</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="wizard-pager">
-                                                            <div class="">
-                                                                <button type="button" class="btn btn-default button-previous btn-rounded">Previous</button>
-                                                                <button type="button" class="btn btn-primary button-next pull-right btn-rounded">Next</button>
+                                                            <div class="form-group mb-0">
+                                                                <label class="text-dark text-semibold">Description</label>
+                                                                <textarea class="form-control rounded" rows="3"></textarea>
+                                                                <span class="text-muted font-size-12 mb-0">Enter the policy description.</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
+                                            </div>
+                                        </div>
+                                        <div id="createpolicy" class="tab-pane fade">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h4 class="card-title text-uppercase mb-0 text-bold">Create default policy</h4>
+                                                    <p>Set your Proxy Configuration and Aloha Configuration below.</p>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div id="accordion-create-policy" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                                                <div class="panel panel-default rounded">
+                                                                    <div class="panel-heading rounded-top" role="tab" id="proxy-configurations">
+                                                                        <h4 class="panel-title">
+                                                                            <a data-toggle="collapse" data-parent="#accordion-create-policy" href="#proxyconfigurations" class="rounded-top">
+                                                                                <span class="font-size-16 text-bold">Proxy Configurations</span>
+                                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                                            </a>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div id="proxyconfigurations" class="collapse panel-collapse">
+                                                                        <div class="panel-body border top">
+                                                                            <div class="row mt-2">
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Maintainance Start Time</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Hour (in 24 hour system) when POS integration does maintenance work (log upload, DB trimming etc.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Language</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Language for POS messages shown by the integration code.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Log Level</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">From 1 to 7: System, Errors, Warnings, Information, Requests, Responses, POS Logs & Files.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">POS Config Update Interval</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">How often integration calls Get Configuration endpoint.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Proxy Destination</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">IP address to bind to when Web proxy is used.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Proxy Port</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Port to listen on when Web proxy is used.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">POS URL</label>
+                                                                                    <input type="text" class="form-control rounded" name="" placeholder="https://pos.punchh.com">
+                                                                                    <span class="text-muted font-size-12 mb-0">POS API endpoint url.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">ISL URL</label>
+                                                                                    <input type="text" class="form-control rounded" name="" placeholder="https://isl.punchh.com">
+                                                                                    <span class="text-muted font-size-12 mb-0">ISL API endpoint url.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Log Upload URL</label>
+                                                                                    <input type="text" class="form-control rounded" name="" placeholder="https://poslogs.punchh.com">
+                                                                                    <span class="text-muted font-size-12 mb-0">FQDN Url to upload logs.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Customer</label>
+                                                                                    <input type="text" class="form-control rounded" name="" placeholder="https://poslogs.punchh.com">
+                                                                                    <span class="text-muted font-size-12 mb-0">Used if standard messages need to be overwritten for a customer.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Regex Filter</label>
+                                                                                    <input type="text" class="form-control rounded" name="" placeholder="https://poslogs.punchh.com">
+                                                                                    <span class="text-muted font-size-12 mb-0">When that REGEX is true then barcode is not printed. Regex applies to the whole request string sent to Receipt Data Sink.</span>
+                                                                                </div>
+                                                                                <div class="col-md-6">&nbsp;</div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="enable-barcode -printing" name="enable-barcode -printing" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="enable-barcode -printing">
+                                                                                            Enable Barcode Printing
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to enable/disable barcode printing.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="keep-socket-open" name="keep-socket-open" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="keep-socket-open">
+                                                                                            Keep Socket Open
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Doesn't close connection from terminals to BOH for every request if enabled.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="barcode-on-redeem" name="barcode-on-redeem" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="barcode-on-redeem">
+                                                                                            Barcode on Redeem
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;If true then barcodes are printed for checks with redemptions.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="send-to-datasink" name="send-to-datasink" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="send-to-datasink">
+                                                                                            Send to Datasink
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;If true the receipt are sent to receipt detail store.
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel panel-default mb-0 rounded">
+                                                                    <div class="panel-heading rounded-top" role="tab" id="aloha-configurations">
+                                                                        <h4 class="panel-title rounded-top">
+                                                                            <a class="collapsed rounded-top" data-toggle="collapse" data-parent="#accordion-create-policy" href="#proxyport">
+                                                                                <span class="font-size-16 text-bold">Aloha Configurations</span>
+                                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                                            </a>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div id="proxyport" class="collapse panel-collapse show" role="tabpanel">
+                                                                        <div class="panel-body border top">
+                                                                            <div class="row mt-2">
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Start Update Time</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Starting Time at which the aloha updates.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Up Hours</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Uptime hours since aloha system started.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Redeem Item Category</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Array of POS Redeem category codes.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Points Item Category</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Array of POS Points category codes.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Redeem Item ID</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">POS Menu Item Id for redeem.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Punchh Item ID</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">POS Menu Item Id for earning.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Polling Interval</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Polling Interval for configuration update by Punchh monitor service.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Void Reason</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">POS Void ID.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Earn Message</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">String for overriding message printed on earning.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Redeem Message</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">String for overriding message printed on redeem.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Third Party Item ID</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Menu Item Id for 3rd party apps (eg. online orders).</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Filter Item Category</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Array of category codes that are allowed earnings/redeem.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Disable by Revenue Center</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Disable printing of barcodes based on pos revenue center id (e.g. catering)">Disable By Revenue Center.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Barcode by Order Mode</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">Array of orders modes allowed to print barcodes.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Menu Item Prefix</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">String to override Menu Item Id with prefix.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Comp ID</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">POS Discount ID.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Barcode on Fetch</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">It is used when proxy can not keep up on traffic on POS. It queues multiple barcodes.</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <label class="text-dark text-semibold">Terminal .Net Version</label>
+                                                                                    <input type="text" class="form-control rounded" name="">
+                                                                                    <span class="text-muted font-size-12 mb-0">.Net framework version of terminal</span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="barcode-on-reprint" name="barcode-on-reprint" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="barcode-on-reprint">
+                                                                                            Barcode on Reprint
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag for printing barcodes on check reprints.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="barcode-on-checkin" name="barcode-on-checkin" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="barcode-on-checkin">
+                                                                                            Barcode on Checkin
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to allow barcodes on checkin.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="print-only-closed-check" name="print-only-closed-check" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="print-only-closed-check">
+                                                                                            Print only Closed Check
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to only allow barcodes on closed checks.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="points-only-customer" name="points-only-customer" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="points-only-customer">
+                                                                                            Points only Customer
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to indicate points only customers.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="auto-create-customer" name="auto-create-customer" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="auto-create-customer">
+                                                                                            Auto Create Customer
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to allow adding new guest if lookup fails.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="auto-checkin" name="auto-checkin" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="auto-checkin">
+                                                                                            Auto Checkin
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to allow adding new guest if lookup fails.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="use-barcode-scan-interface" name="use-barcode-scan-interface" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="use-barcode-scan-interface">
+                                                                                            Use Barcode Scan Interface
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;Flag to use barcode scanner interface.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0" for="order-items">
+                                                                                            Order Items
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;When it’s activated, there’s a call made to Aloha when the checkin/redemption menu item is added to check that “sends” the unordered items to the kitchen.
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="form-group col-md-12 mb-0">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="has-gift-card-integration" name="has-gift-card-integration" type="checkbox" class="gift-card-integration">
+                                                                                        <label class="col-md-12 boolean optional text-dark text-bold mb-0 gift-card-integration" for="has-gift-card-integration">
+                                                                                            Has Gift Card Integration
+                                                                                        </label>
+                                                                                    </div>
+                                                                                    <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
+                                                                                         &nbsp;True, if it support Gift Card Integration.
+                                                                                    </span>
+                                                                                    <div class="row mt-3 has-gift-card-integration">
+                                                                                        <div class="col-md-12">
+                                                                                            <div class="card click-show-accordion mb-0">
+                                                                                                <div class="card-body">
+                                                                                                    <h4 class="card-title mb-0 text-bold font-size-14">Gift Card Integration</h4>
+                                                                                                    <div class="row mt-2">
+                                                                                                        <div class="form-group col-md-6 mb-0">
+                                                                                                            <label class="text-dark text-semibold">Gift Card Item ID</label>
+                                                                                                            <input type="text" class="form-control rounded" name="">
+                                                                                                            <span class="text-muted font-size-12 mb-0">Unique item identifier for gift card.</span>
+                                                                                                        </div>
+                                                                                                        <div class="form-group col-md-6 mb-0">
+                                                                                                            <label class="text-dark text-semibold">Gift Card Tender ID</label>
+                                                                                                            <input type="text" class="form-control rounded" name="">
+                                                                                                            <span class="text-muted font-size-12 mb-0">Unique tender identifier for gift card</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="review-confirm" class="tab-pane fade">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h4 class="card-title text-uppercase mb-0 text-bold">review & confirm</h4>
+                                                    <p>Please review and confirm your Brand Policy configuration to complete.</p>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="accordion panel-group">
+                                                                <div class="panel panel-default rounded">
+                                                                    <div class="panel-heading rounded-top" role="tab">
+                                                                        <h4 class="panel-title pt-2 pb-2 pl-3 pr-3">
+                                                                            <span class="rounded-top font-size-16 text-bold">
+                                                                                General Infomartion
+                                                                            </span>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div class="collapse panel-collapse show">
+                                                                        <div class="panel-body border top">
+                                                                            <div class="row mt-2">
+                                                                                <div class="col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Policy Name</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15 mb-0">SmashBurger Default Policy</p>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Language</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15 mb-0">Policy Description Here</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel panel-default rounded">
+                                                                    <div class="panel-heading rounded-top" role="tab">
+                                                                        <h4 class="panel-title pt-2 pb-2 pl-3 pr-3">
+                                                                            <span class="rounded-top font-size-16 text-bold">
+                                                                                Proxy Configurations
+                                                                            </span>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div class="collapse panel-collapse show">
+                                                                        <div class="panel-body border top">
+                                                                            <div class="row mt-2">
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Maintainance Start Time</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Language</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Log Level</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">6</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">POS Config Update Interval</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">60</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Proxy destination</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">-</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Proxy Port</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">8080</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">POS Url</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">https://pos.punchh.com</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">ISL Url</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">https://isl.punchh.com</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Log Upload Url</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">https://poslog.punchh.com</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Regex Filter</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox" checked="">
+                                                                                        <label class="col-md-12 boolean optional text-dark font-weight-500 mb-0" for="order-items">
+                                                                                            Enable Barcode Printing
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox" checked="">
+                                                                                        <label class="col-md-12 boolean optional text-dark font-weight-500 mb-0" for="order-items">
+                                                                                            Keep Socket Open
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel panel-default rounded">
+                                                                    <div class="panel-heading rounded-top" role="tab">
+                                                                        <h4 class="panel-title pt-2 pb-2 pl-3 pr-3">
+                                                                            <span class="rounded-top font-size-16 text-bold">
+                                                                                Aloha configurations
+                                                                            </span>
+                                                                        </h4>
+                                                                    </div>
+                                                                    <div class="collapse panel-collapse show">
+                                                                        <div class="panel-body border top">
+                                                                            <div class="row mt-2">
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Start Update time</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Up Hours</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Redeem Item category</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">points item category</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Comp ID</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Punchh Item ID</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Polling Interval</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Void interval</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Earn Message</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">Test earn message will be here</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Redeem Message</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">Test redeem message will be here</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Third party item id</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Filter item category</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Disabled by revenue center</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Barcode by Order mode</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Menu item prefix</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Order items</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Gift Card Item Id</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Gift Card Tender Id</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox" checked="">
+                                                                                        <label class="col-md-12 boolean optional text-dark font-weight-500 mb-0" for="order-items">
+                                                                                            Barcode on reprint
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox" checked="">
+                                                                                        <label class="col-md-12 boolean optional text-dark font-weight-500 mb-0" for="order-items">
+                                                                                            Barcode On Checkin
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox" checked="">
+                                                                                        <label class="col-md-12 boolean optional text-dark font-weight-500 mb-0" for="order-items">
+                                                                                            Print Only Closed Check
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <div class="checkbox pb-0">
+                                                                                        <input id="order-items" name="order-items" type="checkbox" checked="">
+                                                                                        <label class="col-md-12 boolean optional text-dark font-weight-500 mb-0" for="order-items">
+                                                                                            Auto Checkin
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="submit-policy" class="tab-pane fade">
+                                            <div class="card">
+                                                <div class="card-block text-center">
+                                                    <div class="clerfix">
+                                                        <span href="" class="btn btn-success btn-icon btn-rounded">
+                                                            <i class="fa fa-check text-light"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="clerfix p-3 text-dark font-size-20">
+                                                        Your Configuration has been successfully setup to<br>associated locations.
+                                                    </div>
+                                                    <div class="clerfix">
+                                                        <button class="btn btn-default btn-default-blue mr-0 mb-0 align-self-center">
+                                                            POS Configuration Dashboard
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wizard-pager">
+                                            <button type="button" class="btn btn-default button-previous btn-default-blue mr-0 mb-0 align-self-center">Previous</button>
+                                            <button type="button" class="btn btn-primary button-next pull-right">Next</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -580,9 +1006,9 @@
                         <div class="copyright">
                             <span>Copyright © 2017 <b class="text-dark">Theme_Nate</b>. All rights reserved.</span>
                             <span class="go-right">
-                                    <a href="" class="text-gray mrg-right-15">Term &amp; Conditions</a>
-                                    <a href="" class="text-gray">Privacy &amp; Policy</a>
-                                </span>
+                                <a href="" class="text-gray mrg-right-15">Term &amp; Conditions</a>
+                                <a href="" class="text-gray">Privacy &amp; Policy</a>
+                            </span>
                         </div>
                     </div>
                 </footer>
@@ -616,6 +1042,10 @@
     <script src="assets/js/forms/form-wizard.js"></script>
 
     <style type="text/css">
+        .form-wizard .progress {
+            height: 2px;
+            top: 22px;
+        }
         .form-wizard .nav-item a {
             color: #8F92A1 !important;
         }
@@ -656,15 +1086,26 @@
             border-color: #5688D3 !important;
         }
         .btn-primary:hover,
-        .btn-primary:focus, {
+        .btn-primary:focus {
             background-color: #6a96d8 !important;
             border-color: #6a96d8 !important;
         }
-        .accordion .panel-title > a {
+        .accordion .panel-title > a,
+        #review-confirm .panel-title h4,
+        .click-show-accordion {
             background-color: #FBFBFC;
         }
     </style>
-
+    <script type="text/javascript">
+        $(".click-show-accordion").hide();
+        $(".gift-card-integration").click(function() {
+            if($(this).is(":checked")) {
+                $(".click-show-accordion").show();
+            } else {
+                $(".click-show-accordion").hide();
+            }
+        });
+    </script>
 </body>
 
 </html>

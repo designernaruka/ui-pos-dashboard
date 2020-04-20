@@ -3,57 +3,57 @@
 (function ($) {
 	'use strict';
 
-	var $validator = $("#shipping-form").validate({
-	    rules: {
-	        firstName: {
-		        required: true,
-		        minlength: 3
-		    },
-		    lastName: {
-		        required: true,
-		        minlength: 3
-		    },
-		    email: {
-		        required: true,
-		        minlength: 3,
-		        email: true
-		    },
-		    address: {
-		    	required: true
-		    },
-		    state: {
-		    	required: true
-		    },
-		    city: {
-		    	required: true
-		    },
-		    postcode: {
-		    	required: true,
-		    	minlength: 3
-		    },
-		    creditCard: {
-		    	required: true,
-		    	minlength: 12,
-		    	maxlength: 12
-		    },
-		    cvv: {
-		    	required: true,
-		    	minlength: 3,
-		    	maxlength: 3
-		    },
-		    mmyy: {
-		    	required: true,
-		    	minlength: 4,
-		    	maxlength: 4
-		    },
-		    cardName: {
-		    	required: true
-		    }
-	    }
-	});
+	// var $validator = $("#default-policy").validate({
+	//     rules: {
+	//         firstName: {
+	// 	        required: true,
+	// 	        minlength: 3
+	// 	    },
+	// 	    lastName: {
+	// 	        required: true,
+	// 	        minlength: 3
+	// 	    },
+	// 	    email: {
+	// 	        required: true,
+	// 	        minlength: 3,
+	// 	        email: true
+	// 	    },
+	// 	    address: {
+	// 	    	required: true
+	// 	    },
+	// 	    state: {
+	// 	    	required: true
+	// 	    },
+	// 	    city: {
+	// 	    	required: true
+	// 	    },
+	// 	    postcode: {
+	// 	    	required: true,
+	// 	    	minlength: 3
+	// 	    },
+	// 	    creditCard: {
+	// 	    	required: true,
+	// 	    	minlength: 12,
+	// 	    	maxlength: 12
+	// 	    },
+	// 	    cvv: {
+	// 	    	required: true,
+	// 	    	minlength: 3,
+	// 	    	maxlength: 3
+	// 	    },
+	// 	    mmyy: {
+	// 	    	required: true,
+	// 	    	minlength: 4,
+	// 	    	maxlength: 4
+	// 	    },
+	// 	    cardName: {
+	// 	    	required: true
+	// 	    }
+	//     }
+	// });
 
 	function validationChecking() {
-	    var $valid = $('#shipping-form').valid();
+	    var $valid = $('#default-policy').valid();
 	    if (!$valid) {
 	        $validator.focusInvalid();
 	        return false;

@@ -69,6 +69,10 @@
 }
 /* Form Wizard Screens */
 .form-wizard {
+  .progress {
+    height: 2px;
+    top: 22px;
+  }
   .nav-item {
     a {
       color: #8F92A1 !important;
@@ -105,7 +109,9 @@
   }
 }
 .accordion {
-  .panel-title > a {
+  .panel-title > a,
+  .click-show-accordion  {
     background-color: #FBFBFC;
   }
 }
+
