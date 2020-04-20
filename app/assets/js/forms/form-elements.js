@@ -2,7 +2,7 @@
 
 (function ($) {
 	'use strict';
-    
+
 	$('#selectize-dropdown').selectize({
 		create: false,
 		sortField: {

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Punchh - POS Support Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/punchh/image/upload/v1/static/favicon.ico" />
+
+    <!-- plugins css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.default.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css" />
+
+    <!-- core css -->
+    <link href="assets/css/ei-icon.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="layout">
+            <!-- Side Nav START -->
+            <div class="side-nav">
+                <div class="side-nav-inner">
+                    <div class="side-nav-logo">
+                        <a href="index.html">
+                            <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo-sm.svg')"></div>
+                            <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
+                        </a>
+                        <div class="mobile-toggle side-nav-toggle">
+                            <a href="">
+                                <i class="ti-arrow-circle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="side-nav-menu scrollable">
+                        <li class="nav-item active">
+                            <a class="mrg-top-30" href="index.html">
+                                <span class="icon-holder">
+                                        <i class="ti-home"></i>
+                                    </span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="javascript:void(0);">
+                                <span class="icon-holder">
+                                        <i class="ei-luggage"></i>
+                                    </span>
+                                <span class="title">Businesses</span>
+                                <span class="arrow">
+                                        <i class="ti-angle-right"></i>
+                                    </span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="javascript:void(0);">
+                                <span class="icon-holder">
+                                        <i class="ei-tools"></i>
+                                    </span>
+                                <span class="title">Settings</span>
+                                <span class="arrow">
+                                        <i class="ti-angle-right"></i>
+                                    </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Side Nav END -->
+
+            <!-- Page Container START -->
+            <div class="page-container">
+                <!-- Header START -->
+                <div class="header navbar">
+                    <div class="header-container">
+                        <ul class="nav-left">
+                            <li>
+                                <a class="side-nav-toggle" href="javascript:void(0);">
+                                    <i class="ti-view-grid"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="search-box">
+                                <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                                    <i class="search-icon ti-search pdd-right-10"></i>
+                                    <i class="search-icon-close ti-close pdd-right-10"></i>
+                                </a>
+                            </li>
+                            <li class="search-input">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <div class="advanced-search">
+                                    <div class="search-wrapper">
+                                        <div class="pdd-vertical-10">
+                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+                                                    <i class="ti-user pdd-right-5"></i>
+                                                    <span>People</span>
+                                            </span>
+                                            <ul class="list-unstyled list-info">
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Backer Drive & Sans</span>
+                                                            <span class="sub-title">
+                                                                    <i class="ti-location-pin"></i>
+                                                                    <span>44 Shirley Ave. West Chicago</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Jennifer Watkins</span>
+                                                            <span class="sub-title">
+                                                                    <i class="ti-location-pin"></i>
+                                                                    <span>514 S. Magnolia St. Orlando</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Michael Birch</span>
+                                                            <span class="sub-title">
+                                                                    <i class="ti-location-pin"></i>
+                                                                    <span>70 Bowman St. South Windsor</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mrg-horizon-20 border top"></div>
+                                        <div class="pdd-vertical-10">
+                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+                                                    <i class="ti-rss pdd-right-5"></i>
+                                                    <span>Post</span>
+                                            </span>
+                                            <ul class="list-unstyled list-info">
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/img-1.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Artoo expresses his relief</span>
+                                                            <span class="sub-title">
+                                                                    <span>Oh, thank goodness we're coming out...</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="assets/images/img-2.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Ready for some power?</span>
+                                                            <span class="sub-title">
+                                                                    <span>Lord Vader. You may take Caption So...</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="search-footer">
+                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notifications dropdown">
+                                <span class="counter">2</span>
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                </a>
+
+                                <ul class="dropdown-menu ">
+                                    <li class="notice-header">
+                                        <i class="ti-bell pdd-right-10"></i>
+                                        <span>Notifications</span>
+                                    </li>
+                                    <li>
+                                        <ul class="list-info overflow-y-auto relative scrollable">
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+                                                            <span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                                                        <span class="text-gray">commented on your <span class="text-dark">post</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 mins ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                    <div class="info">
+                                                        <span class="title">
+                                                            <span class="font-size-14 text-semibold">Samuel Field</span>
+                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
+                                                        </span>
+                                                        <span class="sub-title">8 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-primary">
+                                                            <span class="text-white">M</span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">
+                                                            <span class="font-size-14 text-semibold">Michael Birch</span>
+                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
+                                                        </span>
+                                                        <span class="sub-title">5 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-success">
+                                                        <span class="text-white"><i class="fa fa-paper-plane-o"></i></span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">
+                                                            <span class="font-size-14 text-semibold">Message sent</span>
+                                                        </span>
+                                                        <span class="sub-title">8 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="thumb-img bg-info">
+                                                        <span class="text-white"><i class="ti-user"></i></span>
+                                                    </span>
+                                                    <div class="info">
+                                                        <span class="title">
+                                                            <span class="font-size-14 text-semibold">Admin</span>
+                                                        <span class="text-gray">Welcome on board</span>
+                                                        </span>
+                                                        <span class="sub-title">8 hours ago</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="notice-footer">
+                                        <span>
+                                            <a href="" class="text-gray">Check all notifications <i class="ei-right-chevron pdd-left-5 font-size-10"></i></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="user-profile dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-settings pdd-right-10"></i>
+                                            <span>Setting</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-email pdd-right-10"></i>
+                                            <span>Inbox</span>
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-power-off pdd-right-10"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="side-panel-toggle" href="javascript:void(0);">
+                                    <i class="ti-align-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header END -->
+
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    <div class="container-fluid">
+                        <div class="page-title">
+                            <h4>Form Wizard</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <div class="row relative">
+                                            <form id="shipping-form" class="width-100" method="get">
+                                                <div id="rootwizard" class="form-wizard col-md-10 ml-auto mr-auto">
+                                                    <ul class="nav nav-pills nav-fill">
+                                                        <li class="nav-item">
+                                                            <a href="#step1" data-toggle="tab">
+                                                                <span class="step">1</span>
+                                                                <span class="title">Your Order</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#step2" data-toggle="tab">
+                                                                <span class="step">2</span>
+                                                                <span class="title">Shipping Info</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#step3" data-toggle="tab">
+                                                                <span class="step">3</span>
+                                                                <span class="title">Payment Method</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#step4" data-toggle="tab">
+                                                                <span class="step">4</span>
+                                                                <span class="title">Confirmation</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div id="bar" class="progress progress-info" style="width: 75%">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                                                    </div>
+                                                    <div class="tab-content">
+                                                        <div id="step1" class="tab-pane fade in active">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <table class="table table-hover product-table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th></th>
+                                                                                <th>Item</th>
+                                                                                <th>Quantity</th>
+                                                                                <th>Price</th>
+                                                                                <th class="text-right">Subtotal</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img class="img-fluid" src="assets/images/others/product-1.jpg" alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5158/P</p>
+                                                                                    <b>Size: Medium</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">1</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">$180.00</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20 text-right">$180.00</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img class="img-fluid" src="assets/images/others/product-2.jpg" alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5168</p>
+                                                                                    <b>Size: Medium</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">4</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">$200.00</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20 text-right">$800.00</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <img class="img-fluid" src="assets/images/others/product-3.jpg" alt="">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-10 no-mrg-btm">Vincent Chase VC 5168</p>
+                                                                                    <b>Size: Medium</b>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">2</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20">$180.00</p>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <p class="pdd-top-20 text-right">$360.00</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="pdd-horizon-30">
+                                                                        <div class="card">
+                                                                            <div class="card-block">
+                                                                                <h4 class="card-title mrg-btm-30">Summary</h4>
+                                                                                <div class="border bottom">
+                                                                                    <p>Subtotal: <span class="pull-right">$1,340.00</span></p>
+                                                                                    <p>Shipping: <span class="pull-right">$100.00</span></p>
+                                                                                    <p class="mrg-top-20">Discount: <span class="pull-right">$60</span></p>
+                                                                                </div>
+                                                                                <p class="mrg-top-20">Grand Total: <span class="pull-right text-dark font-size-18"><b>$1380.00</b></span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="step2" class="tab-pane fade">
+                                                            <div class="row">
+                                                                <div class="col-md-10 mr-auto ml-auto">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>First Name</label>
+                                                                                <input type="text" class="form-control" name="firstName">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label>Last Name</label>
+                                                                                <input type="text" class="form-control" name="lastName">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label>Email</label>
+                                                                                <input type="email" class="form-control" name="email">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label>Address</label>
+                                                                                <input type="text" class="form-control" name="address">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <label>State</label>
+                                                                                <input type="text" class="form-control" name="state">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <label>City</label>
+                                                                                <input type="text" class="form-control" name="city">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <label>Post Code</label>
+                                                                                <input type="text" class="form-control" name="postcode">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label>Remarks</label>
+                                                                                <textarea class="form-control" rows="3"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="step3" class="tab-pane fade">
+                                                            <div class="row">
+                                                                <div class="col-md-8 mr-auto ml-auto">
+                                                                    <p class="font-size-18">
+                                                                        <span>Total Payment Amount: </span>
+                                                                        <b class="text-dark">$1380.00</b>
+                                                                        <img class="pull-right" src="assets/images/others/credit-card.png" alt="">
+                                                                    </p>
+                                                                    <div class="mrg-top-40">
+                                                                        <div class="row">
+                                                                            <div class="form-group col-md-12">
+                                                                                <label><span class="pdd-left-5"><b>CREDIT CARD NUMBER</b></span></label>
+                                                                                <input type="text" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" class="form-control" placeholder="_ _ _ _ - _ _ _ _ - _ _ _ _ - _ _ _ _ " name="creditCard">
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label><span class="pdd-left-5"><b>CVV Code</b></span></label>
+                                                                                <input type="text" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" class="form-control" placeholder="_ _ _" name="cvv">
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label><span class="pdd-left-5"><b>Expired Date</b></span></label>
+                                                                                <input type="text" class="form-control" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" placeholder="MM/YY" name="mmyy">
+                                                                            </div>
+                                                                            <div class="form-group col-md-12">
+                                                                                <label><span class="pdd-left-5"><b>Cardholder Name</b></span></label>
+                                                                                <input type="text" class="form-control" placeholder="Card Name" name="cardName">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="step4" class="tab-pane fade">
+                                                            <div class="row">
+                                                                <div class="col-md-6 mr-auto ml-auto">
+                                                                    <img class="img-fluid d-block mrg-horizon-auto" src="assets/images/others/cart.png" alt="">
+                                                                    <div class="text-center">
+                                                                        <h2>Thanks for Your Order</h2>
+                                                                        <p>Your order has been placed successfully.
+                                                                            <br> Click learn more to know more about the order status.
+                                                                        </p>
+                                                                        <button class="btn btn-info btn-inverse btn-lg">Learn More</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wizard-pager">
+                                                            <div class="">
+                                                                <button type="button" class="btn btn-default button-previous btn-rounded">Previous</button>
+                                                                <button type="button" class="btn btn-primary button-next pull-right btn-rounded">Next</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Wrapper END -->
+
+                <!-- Footer START -->
+                <footer class="content-footer">
+                    <div class="footer">
+                        <div class="copyright">
+                            <span>Copyright © 2017 <b class="text-dark">Theme_Nate</b>. All rights reserved.</span>
+                            <span class="go-right">
+                                    <a href="" class="text-gray mrg-right-15">Term &amp; Conditions</a>
+                                    <a href="" class="text-gray">Privacy &amp; Policy</a>
+                                </span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer END -->
+
+            </div>
+            <!-- Page Container END -->
+
+        </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/PACE/pace.min.js"></script>
+    <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+
+    <!-- page plugins js -->
+    <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../bower_components/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/js/forms/form-wizard.js"></script>
+
+    <style type="text/css">
+        .form-wizard .nav-item a {
+            color: #8F92A1 !important;
+        }
+        .form-wizard .nav-item a.active {
+            color: #33343D !important;
+        }
+        .form-wizard .nav-item a i {
+            display: none;
+        }
+        .form-wizard .nav-pills > li > a .step {
+            width: 30px;
+            height: 30px;
+            line-height: 25px;
+            border-width: 2px;
+        }
+        .form-wizard .nav-item a.active .step:before {
+            display: none;
+        }
+        .form-wizard .nav-item a .step:before {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-color: #E6ECF5;
+            content: ' ';
+            text-align: center;
+            border-radius: 50%;
+        }
+        .form-wizard .nav-item a.active i {
+            display: inline-block;
+        }
+        .btn-default-blue {
+          color: #5688D3 !important;
+          border-color: #5688D3 !important;
+        }
+        .btn-primary {
+            background-color: #5688D3 !important;
+            color: #ffffff !important;
+            border-color: #5688D3 !important;
+        }
+        .btn-primary:hover,
+        .btn-primary:focus, {
+            background-color: #6a96d8 !important;
+            border-color: #6a96d8 !important;
+        }
+        .accordion .panel-title > a {
+            background-color: #FBFBFC;
+        }
+    </style>
+
+</body>
+
+</html>

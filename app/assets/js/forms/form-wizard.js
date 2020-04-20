@@ -23,7 +23,7 @@
 		    },
 		    state: {
 		    	required: true
-		    },	
+		    },
 		    city: {
 		    	required: true
 		    },

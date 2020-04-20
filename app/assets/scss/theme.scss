@@ -48,6 +48,16 @@
     }
   }
 }
+.btn-primary {
+    background-color: #5688D3;
+    color: #ffffff;
+    border-color: #5688D3;
+    &:hover,
+    &::focus {
+      background-color: #6a96d8;
+      border-color: #6a96d8;
+    }
+}
 .btn-default-blue {
   color: #5688D3 !important;
   border-color: #5688D3 !important;
@@ -55,5 +65,47 @@
 .select-size {
   .selectize-input {
     width: 200px;
+  }
+}
+/* Form Wizard Screens */
+.form-wizard {
+  .nav-item {
+    a {
+      color: #8F92A1 !important;
+      &.active {
+        color: #33343D;
+        i {
+         display: inline-block;
+        }
+        .step {
+          :before {
+            display: none;
+          }
+        }
+      }
+      i {
+        display: none;
+      }
+      .step {
+        width: 30px;
+        height: 30px;
+        line-height: 25px;
+        border-width: 2px;
+        :before {
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+          background-color: #E6ECF5;
+          content: ' ';
+          text-align: center;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+.accordion {
+  .panel-title > a {
+    background-color: #FBFBFC;
   }
 }
