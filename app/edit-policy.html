@@ -701,7 +701,7 @@
                                                                                 </div>
                                                                                 <div class="form-group col-md-12 mb-0">
                                                                                     <div class="checkbox pb-0">
-                                                                                        <input id="has-gift-card-integration" name="has-gift-card-integration" type="checkbox" class="gift-card-integration">
+                                                                                        <input id="has-gift-card-integration" name="has-gift-card-integration" type="checkbox" class="click-event">
                                                                                         <label class="col-md-12 boolean optional text-dark text-bold mb-0 gift-card-integration" for="has-gift-card-integration">
                                                                                             Has Gift Card Integration
                                                                                         </label>
@@ -711,7 +711,7 @@
                                                                                     </span>
                                                                                     <div class="row mt-3 has-gift-card-integration">
                                                                                         <div class="col-md-12">
-                                                                                            <div class="card click-show-accordion mb-0">
+                                                                                            <div class="card show-hide mb-0">
                                                                                                 <div class="card-body">
                                                                                                     <h4 class="card-title mb-0 text-bold font-size-14">Gift Card Integration</h4>
                                                                                                     <div class="row mt-2">
@@ -1096,6 +1096,16 @@
             background-color: #FBFBFC;
         }
     </style>
+    <script type="text/javascript">
+        $(".show-hide").hide();
+        $(".click-event").click(function() {
+            if($(this).is(":checked")) {
+                $(".show-hide").show();
+            } else {
+                $(".show-hide").hide();
+            }
+        });
+    </script>
     <script type="text/javascript">
         $(".click-show-accordion").hide();
         $(".gift-card-integration").click(function() {

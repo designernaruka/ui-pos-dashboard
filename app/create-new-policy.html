@@ -390,7 +390,7 @@
                                                             </div>
                                                             <div class="form-group mb-0">
                                                                 <div class="checkbox pb-0">
-                                                                    <input id="make-a-copy-from-extisting-policy" name="make-a-copy-from-extisting-policy" type="checkbox">
+                                                                    <input id="make-a-copy-from-extisting-policy" name="make-a-copy-from-extisting-policy" type="checkbox" class="click-event">
                                                                     <label class="col-md-12 boolean optional text-dark  text-semibold mb-0" for="make-a-copy-from-extisting-policy">
                                                                         Make a copy from extisting policy
                                                                     </label>
@@ -398,8 +398,17 @@
                                                                 <span class="text-muted font-size-12 mb-0 ml-3 d-block ml-4 pl-2 mb-0">
                                                                      &nbsp;Select this to copy configurations from exisiting policies.
                                                                 </span>
-                                                            </div>
-                                                            <div class="clerfix">
+                                                                <div class="clerfix show-hide pt-3">
+                                                                    <div class="col-sm-4 pl-3 ml-1">
+                                                                        <form>
+                                                                            <fieldset class="extisting-policy-search col-md-12">
+                                                                                <div class="form-group rounded border bottom mb-0">
+                                                                                    <input class="form-control typeahead twitter-typeahead" data-provide="typeahead" placeholder="Search policies here..." type="text">
+                                                                                </div>
+                                                                            </fieldset>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -423,7 +432,7 @@
                                                                             </a>
                                                                         </h4>
                                                                     </div>
-                                                                    <div id="proxyconfigurations" class="collapse panel-collapse">
+                                                                    <div id="proxyconfigurations" class="collapse panel-collapse show">
                                                                         <div class="panel-body border top">
                                                                             <div class="row mt-2">
                                                                                 <div class="form-group col-md-6">
@@ -539,7 +548,7 @@
                                                                             </a>
                                                                         </h4>
                                                                     </div>
-                                                                    <div id="proxyport" class="collapse panel-collapse show" role="tabpanel">
+                                                                    <div id="proxyport" class="collapse panel-collapse" role="tabpanel">
                                                                         <div class="panel-body border top">
                                                                             <div class="row mt-2">
                                                                                 <div class="form-group col-md-6">
@@ -722,7 +731,7 @@
                                                                                 </div>
                                                                                 <div class="form-group col-md-12 mb-0">
                                                                                     <div class="checkbox pb-0">
-                                                                                        <input id="has-gift-card-integration" name="has-gift-card-integration" type="checkbox" class="gift-card-integration">
+                                                                                        <input id="has-gift-card-integration" name="has-gift-card-integration" type="checkbox" class="click-event">
                                                                                         <label class="col-md-12 boolean optional text-dark text-bold mb-0 gift-card-integration" for="has-gift-card-integration">
                                                                                             Has Gift Card Integration
                                                                                         </label>
@@ -732,7 +741,7 @@
                                                                                     </span>
                                                                                     <div class="row mt-3 has-gift-card-integration">
                                                                                         <div class="col-md-12">
-                                                                                            <div class="card click-show-accordion mb-0">
+                                                                                            <div class="card click-show-accordion show-hide mb-0">
                                                                                                 <div class="card-body">
                                                                                                     <h4 class="card-title mb-0 text-bold font-size-14">Gift Card Integration</h4>
                                                                                                     <div class="row mt-2">
@@ -795,11 +804,11 @@
                                                                         <div class="panel-body border top">
                                                                             <div class="row mt-2">
                                                                                 <div class="col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Policy Name</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Policy Name</h5>
                                                                                     <p class="text-dark text-truncate line-height-15 mb-0">SmashBurger Default Policy</p>
                                                                                 </div>
                                                                                 <div class="col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Language</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Description</h5>
                                                                                     <p class="text-dark text-truncate line-height-15 mb-0">Policy Description Here</p>
                                                                                 </div>
                                                                             </div>
@@ -818,43 +827,43 @@
                                                                         <div class="panel-body border top">
                                                                             <div class="row mt-2">
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Maintainance Start Time</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Maintainance Start Time</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Language</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Language</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Log Level</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Log Level</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">6</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">POS Config Update Interval</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">POS Config Update Interval</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">60</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Proxy destination</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Proxy destination</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">-</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Proxy Port</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Proxy Port</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">8080</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">POS Url</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">POS Url</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">https://pos.punchh.com</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">ISL Url</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">ISL Url</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">https://isl.punchh.com</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Log Upload Url</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Log Upload Url</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">https://poslog.punchh.com</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Regex Filter</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Regex Filter</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
@@ -889,76 +898,83 @@
                                                                         <div class="panel-body border top">
                                                                             <div class="row mt-2">
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Start Update time</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Start Update time</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Up Hours</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Up Hours</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Redeem Item category</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Redeem Item category</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">points item category</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Points item category</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Comp ID</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Comp ID</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Punchh Item ID</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Redeem item id</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Polling Interval</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Punchh Item ID</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Void interval</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Polling Interval</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Earn Message</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Void interval</h5>
+                                                                                    <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Earn Message</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">Test earn message will be here</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Redeem Message</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Redeem Message</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">Test redeem message will be here</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Third party item id</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Third party item id</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Filter item category</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Filter item category</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Disabled by revenue center</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Disabled by revenue center</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Barcode by Order mode</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Barcode by Order mode</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Menu item prefix</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Menu item prefix</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Order items</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Order items</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Gift Card Item Id</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Gift Card Item Id</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
-                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15">Gift Card Tender Id</h5>
+                                                                                    <h5 class="font-size-14 mb-0 font-weight-500 text-truncate line-height-15 text-semibold">Gift Card Tender Id</h5>
                                                                                     <p class="text-dark text-truncate line-height-15">--</p>
+                                                                                </div>
+                                                                                <div class="mrg-btm-10 col-md-6">
+                                                                                    &nbsp;
                                                                                 </div>
                                                                                 <div class="mrg-btm-10 col-md-6">
                                                                                     <div class="checkbox pb-0">
@@ -1051,7 +1067,6 @@
                                 </div>
                             </form>
                         </div>
-                        </div>
                     </div>
                 </div>
                 <!-- Content Wrapper END -->
@@ -1096,6 +1111,7 @@
 
     <!-- page js -->
     <script src="assets/js/forms/form-wizard.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-typeahead/bootstrap3-typeahead.min.js"></script>
 
     <style type="text/css">
         .form-wizard .progress {
@@ -1151,15 +1167,82 @@
         .click-show-accordion {
             background-color: #FBFBFC;
         }
+        .extisting-policy-search .form-group {
+            background-color: #F1F4F8;
+            border: solid 1px #E6ECF5 !important;
+            padding: 15px !important;
+        }
+        .extisting-policy-search .form-group ul.dropdown-menu {
+            position:relative;
+            box-shadow: none !important;
+            box-shadow: none !important;
+            background-color: #ffffff !important;
+            border: solid 1px #E6ECF5 !important;
+            border-radius: 0 0 0.25rem 0.25rem !important;
+            left: -16px !important;
+            top: 10px !important;
+            width: 110% !important;
+            box-sizing: border-box !important;
+        }
     </style>
     <script type="text/javascript">
-        $(".click-show-accordion").hide();
-        $(".gift-card-integration").click(function() {
+        $(".show-hide").hide();
+        $(".click-event").click(function() {
             if($(this).is(":checked")) {
-                $(".click-show-accordion").show();
+                $(".show-hide").show();
             } else {
-                $(".click-show-accordion").hide();
+                $(".show-hide").hide();
             }
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var data = [{
+                "id": "1020",
+                "name": "1020 - Avalon Del Amo | (Brand Default)",
+                "brand": "(Brand Default)"
+            }, {
+                "id": "2081",
+                "name": "2081 - Bald Hill Gate | .Net 3.5 Locations",
+                "brand": ".Net 3.5"
+            }, {
+                "id": "928",
+                "name": "928 - Austin Bluffs & Academy",
+                "brand": "Academy"
+            }, {
+                "id": "1921",
+                "name": "1921 - Briargate (Drive-Thru)",
+                "brand": "(Drive-Thru)"
+            }, {
+                "id": "1012",
+                "name": "1012 - Destin Commons",
+                "brand": "Commons"
+            }, {
+                "id": "2022",
+                "name": "2022 - DIA Concourse C",
+                "brand": "C"
+            }, {
+                "id": "1020",
+                "name": "1020 - Avalon Del Amo | (Brand Default)",
+                "brand": "(Brand Default)"
+            }, {
+                "id": "1020",
+                "name": "1020 - Avalon Del Amo | (Brand Default)",
+                "brand": "(Brand Default)"
+            }, {
+                "id": "1020",
+                "name": "1020 - Avalon Del Amo | (Brand Default)",
+                "brand": "(Brand Default)"
+            }, {
+                "id": "1020",
+                "name": "1020 - Avalon Del Amo | (Brand Default)",
+                "brand": "(Brand Default)"
+            }];
+            var $input = $(".typeahead");
+            $input.typeahead({
+                source: data,
+                autoSelect: true
+            });
         });
     </script>
 </body>
