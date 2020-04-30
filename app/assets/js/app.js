@@ -2,7 +2,7 @@
 
 (function ($) {
 	'use strict';
-	
+
 	// Side Nav
 	function sideNav() {
 		$('.side-nav .side-nav-menu li a').on('click', function(e) {
@@ -21,15 +21,15 @@
 				});
 			}
 		});
-	}	
-	
+	}
+
 	// Side Nav Toogle
 	function sideNavToggle() {
 		$('.side-nav-toggle').on('click', function(e) {
 	        $('.app').toggleClass("is-collapsed");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
 	// Side Panel Toogle
 	function sidePanelToggle() {
@@ -37,7 +37,7 @@
 	        $('.side-panel').toggleClass("side-panel-open");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
 	// Chat Toggle
 	function chatToggle() {
@@ -45,7 +45,7 @@
 	        $('.chat').toggleClass("open");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
 	// Todo Toggle
 	function todoToggle() {
@@ -53,29 +53,29 @@
 	        $('.todo-wrapper').toggleClass("open");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
-	// Search Toggle 
+	// Search Toggle
 	function searchToggle() {
 		$('.search-toggle').on('click', function(e) {
 			$('.search-box, .search-input').toggleClass("active");
 			$('.search-input input').focus();
 			e.preventDefault();
 		});
-	}	
+	}
 
 	// Advance Search
 	function advanceSearch() {
 		$('.search-input input').on('keyup',function(){
 			if($(this).val().length > 0) {
 				$('.advanced-search').addClass("active");
-			} 
+			}
 			else {
 		       $('.advanced-search').removeClass("active");
 		    }
 		    $('.serach-text-bind').html($(this).val());
-		})	
-	} 
+		})
+	}
 
 	// Theme Configurator
 	function themeConfig() {
@@ -83,7 +83,7 @@
 	        $('.theme-configurator').toggleClass("theme-config-open");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
 	// Perfect Scroll Bar
 	function perfectSB() {
@@ -116,7 +116,7 @@
 		});
 	}
 
-	//Theme Config 
+	//Theme Config
 	function themeColorConfig() {
 
 		$(".header-default input").change(function() {
@@ -162,7 +162,7 @@
 	        $('.app').toggleClass("rtl");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
 
 

@@ -26,6 +26,7 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-duallistbox.css" rel="stylesheet">
 
 </head>
 
@@ -778,7 +779,18 @@
                                                     <p>Assign location from available locations to this policy.</p>
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            content will be here
+                                                            <form id="demoform" action="#" method="post">
+                                                                <select multiple="multiple" size="20" name="duallistbox_associateLocations[]">
+                                                                  <option value="option1">Avalon Del Amo | (Brand Default)</option>
+                                                                  <option value="option2">Bald Hill Gate | .Net 3.5 Locations</option>
+                                                                  <option value="option3" selected="selected">Austin Bluffs & Academy</option>
+                                                                  <option value="option4">Briargate (Drive-Thru)</option>
+                                                                  <option value="option5">Destin Commons</option>
+                                                                  <option value="option6" selected="selected">Option 6</option>
+                                                                  <option value="option7">DIA Concourse C</option>
+                                                                  <option value="option8">Dillon & McCaslin</option>
+                                                                </select>
+                                                              </form>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1075,10 +1087,15 @@
                 <footer class="content-footer">
                     <div class="footer">
                         <div class="copyright">
-                            <span>Copyright © 2017 <b class="text-dark">Theme_Nate</b>. All rights reserved.</span>
+                            <span><b class="text-dark">Punchh</b> © 2019</span>
                             <span class="go-right">
-                                <a href="" class="text-gray mrg-right-15">Term &amp; Conditions</a>
-                                <a href="" class="text-gray">Privacy &amp; Policy</a>
+                                <a href="" class="text-gray mrg-right-15">Status</a>
+                                <a href="" class="text-gray mrg-right-15">Developers</a>
+                                <a href="" class="text-gray mrg-right-15">Contact</a>
+                                <a href="" class="text-gray mrg-right-15">About</a>
+                                <a href="" class="text-gray mrg-right-15">Blog</a>
+                                <a href="" class="text-gray mrg-right-15">Security</a>
+                                <a href="" class="text-gray mrg-right-15">Privacy</a>
                             </span>
                         </div>
                     </div>
@@ -1103,6 +1120,7 @@
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.bootstrap-duallistbox.js"></script>
     <!-- endbuild -->
 
     <!-- page plugins js -->
@@ -1184,6 +1202,23 @@
             width: 110% !important;
             box-sizing: border-box !important;
         }
+        .extisting-policy-search select.form-control {
+            padding: 0px;
+            position: relative;
+            top: -5px;
+        }
+        .extisting-policy-search .form-control option {
+            line-height: 1.5;
+            min-height: auto;
+            padding: 8px 15px;
+            display: block;
+            transition: all 0.15s ease-out;
+            -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            -o-transition: all 0.15s ease-out;
+            -ms-transition: all 0.15s ease-out;
+            color: #888da8;
+        }
     </style>
     <script type="text/javascript">
         $(".show-hide").hide();
@@ -1243,6 +1278,13 @@
                 source: data,
                 autoSelect: true
             });
+        });
+    </script>
+    <script>
+        var associateLocations = $('select[name="duallistbox_associateLocations[]"]').bootstrapDualListbox();
+        $("#demoform").submit(function() {
+          alert($('[name="duallistbox_associateLocations[]"]').val());
+          return false;
         });
     </script>
 </body>
