@@ -1,85 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Punchh - POS Support Dashboard</title>
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/punchh/image/upload/v1/static/favicon.ico" />
-
     <!-- plugins css -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
     <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-
     <!-- page plugins css -->
     <link rel="stylesheet" href="../bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css" />
     <link rel="stylesheet" href="../bower_components/nvd3/build/nv.d3.min.css" />
-
     <!-- core css -->
     <link href="assets/css/ei-icon.css" rel="stylesheet">
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="app">
-        <div class="authentication">
-            <div class="col-md-8 ml-auto mr-auto mrg-top-20-vh">
-                <div class="sign-in">
-                    <div class="row no-mrg-horizon">
-                        <div class="col-md-7 no-pdd-horizon pos-hero-image hidden-xs">
-                            <div class="height-full-60 bg rounded-left" style="background-image: url('assets/images/login/hero-login.png')">
-                                <div class="img-caption">
-                                    <h1 class="caption-title">POS Support Dashboard</h1>
-                                    <p class="caption-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 no-pdd-horizon">
-                            <div class="height-full-60 bg-white height-100 rounded-right">
-                                <div class="vertical-align height-full-60 pdd-horizon-15">
-                                    <div class="table-cell">
-                                        <div class="pdd-horizon-15">
-                                            <div class="text-center pdd-top-10">
-                                                <img class="img-responsive thumb-img img-circle inline-block" src="https://res.cloudinary.com/punchh/image/upload/fl_lossy,q_auto/v1/static/punchh-icon-small.png" alt="">
-                                            </div>
-                                            <h2 class="font-size-20 text-bold">Login</h2>
-                                            <form>
-                                                <div class="form-group">
-                                                    <label class="text-normal text-bold text-dark">Email Address</label>
-                                                    <input type="email" class="form-control rounded" placeholder="User name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="text-normal text-bold text-dark">Password</label>
-                                                    <input type="password" class="form-control rounded"no-mrg-vertical placeholder="Password">
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="checkbox font-size-13 inline-block no-mrg-vertical no-pdd-vertical">
-                                                        <input id="agreement" name="agreement" type="checkbox">
-                                                        <label for="agreement" class=" font-size-11">Remember me for 2 weeks?</label>
-                                                    </div>
-                                                    <div class="pull-right font-size-11">
-                                                        <a href=""><u>Forgot Password?</u></a>
-                                                    </div>
-                                                </div>
-                                                <button class="btn btn-info btn-block rounded">LOGIN</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="authentication">
+        <div class="col-md-8 ml-auto mr-auto mrg-top-20-vh">
+          <div class="sign-in">
+            <div class="row no-mrg-horizon">
+              <div class="col-md-7 no-pdd-horizon pos-hero-image hidden-xs">
+                <div class="height-full-60 bg rounded-left" style="background-image: url('assets/images/login/hero-login.png')">
+                  <div class="img-caption">
+                    <h1 class="caption-title">POS Support Dashboard</h1>
+                    <p class="caption-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-5 no-pdd-horizon">
+                <div class="height-full-60 bg-white height-100 rounded-right">
+                  <div class="vertical-align height-full-60 pdd-horizon-15">
+                    <div class="table-cell">
+                      <div class="pdd-horizon-15">
+                        <div class="text-center pdd-top-10">
+                          <img class="img-responsive thumb-img img-circle inline-block" src="https://res.cloudinary.com/punchh/image/upload/fl_lossy,q_auto/v1/static/punchh-icon-small.png" alt="">
+                        </div>
+                        <h2 class="font-size-20 text-bold">Login</h2>
+                        <form>
+                          <div class="form-group">
+                            <label class="text-normal text-bold text-dark">Email Address</label>
+                            <input type="email" class="form-control rounded" placeholder="User name">
+                          </div>
+                          <div class="form-group">
+                            <label class="text-normal text-bold text-dark">Password</label>
+                            <input type="password" class="form-control rounded"no-mrg-vertical placeholder="Password">
+                          </div>
+                          <div class="form-group">
+                            <div class="checkbox font-size-13 inline-block no-mrg-vertical no-pdd-vertical">
+                              <input id="agreement" name="agreement" type="checkbox">
+                              <label for="agreement" class=" font-size-11">Remember me for 2 weeks?</label>
+                            </div>
+                            <div class="pull-right font-size-11">
+                              <a href=""><u>Forgot Password?</u></a>
+                            </div>
+                          </div>
+                          <button class="btn btn-info btn-block rounded">LOGIN</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -88,41 +81,38 @@
     <script src="../bower_components/PACE/pace.min.js"></script>
     <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
     <!-- endbuild -->
-
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="assets/js/app.js"></script>
     <!-- endbuild -->
-
     <!-- page js -->
-
-</body>
-<!-- Css need to remove before go live as added SCCS file -->
-<style type="text/css">
+  </body>
+  <!-- Css need to remove before go live as added SCCS file -->
+  <style type="text/css">
     .pos-hero-image:before {
-      content: '';
-      background-color: rgba(86,136,211,0.4);
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      -moz-border-radius: 5px 0 0 5px;
-      -mso-border-radius: 5px 0 0 5px;
-      -webkit-border-radius: 5px 0 0 5px;
+    content: '';
+    background-color: rgba(86,136,211,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -moz-border-radius: 5px 0 0 5px;
+    -mso-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
     }
     .height-full-60 {
-        height: 60vh;
+    height: 60vh;
     }
     .mrg-top-20-vh {
-        margin-top: 20vh;
+    margin-top: 20vh;
     }
     .checkbox input[type=checkbox] + label:before {
-        height: 15px;
-        width: 15px;
+    height: 15px;
+    width: 15px;
     }
     .sign-in h2 {
-        color: #5688D3;
+    color: #5688D3;
     }
-</style>
+  </style>
 </html>

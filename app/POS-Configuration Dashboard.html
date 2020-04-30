@@ -1,459 +1,443 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Punchh - POS Support Dashboard</title>
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/punchh/image/upload/v1/static/favicon.ico" />
-
     <!-- plugins css -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
     <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-
     <!-- page plugins css -->
     <link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.default.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
     <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css" />
-
     <!-- core css -->
     <link href="assets/css/ei-icon.css" rel="stylesheet">
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
-
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="app">
-        <div class="layout">
-            <!-- Side Nav START -->
-            <div class="side-nav">
-                <div class="side-nav-inner">
-                    <div class="side-nav-logo">
-                        <a href="index.html">
-                            <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo-sm.svg')"></div>
-                            <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
-                        </a>
-                        <div class="mobile-toggle side-nav-toggle">
-                            <a href="">
-                                <i class="ti-arrow-circle-left"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <ul class="side-nav-menu scrollable">
-                        <li class="nav-item active">
-                            <a class="mrg-top-30" href="index.html">
-                                <span class="icon-holder">
-										<i class="ti-home"></i>
-									</span>
-                                <span class="title">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="javascript:void(0);">
-                                <span class="icon-holder">
-										<i class="ei-luggage"></i>
-									</span>
-                                <span class="title">Businesses</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="javascript:void(0);">
-                                <span class="icon-holder">
-										<i class="ei-tools"></i>
-									</span>
-                                <span class="title">Settings</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav">
+          <div class="side-nav-inner">
+            <div class="side-nav-logo">
+              <a href="index.html">
+                <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo-sm.svg')"></div>
+                <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
+              </a>
+              <div class="mobile-toggle side-nav-toggle">
+                <a href="">
+                <i class="ti-arrow-circle-left"></i>
+                </a>
+              </div>
             </div>
-            <!-- Side Nav END -->
-
-            <!-- Page Container START -->
-            <div class="page-container">
-                <!-- Header START -->
-                <div class="header navbar">
-                    <div class="header-container">
-                        <ul class="nav-left">
-                            <li>
-                                <a class="side-nav-toggle" href="javascript:void(0);">
-                                    <i class="ti-view-grid"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li class="search-box">
-                                <a class="search-toggle no-pdd-right" href="javascript:void(0);">
-                                    <i class="search-icon ti-search pdd-right-10"></i>
-                                    <i class="search-icon-close ti-close pdd-right-10"></i>
-                                </a>
-                            </li>
-                            <li class="search-input">
-                                <input class="form-control" type="text" placeholder="Search...">
-                                <div class="advanced-search">
-                                    <div class="search-wrapper">
-                                        <div class="pdd-vertical-10">
-                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
-                                                <i class="ti-user pdd-right-5"></i>
-                                                <span>People</span>
-                                            </span>
-                                            <ul class="list-unstyled list-info">
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Backer Drive & Sans</span>
-                                                            <span class="sub-title">
-                                                                <i class="ti-location-pin"></i>
-                                                                <span>44 Shirley Ave. West Chicago</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Jennifer Watkins</span>
-                                                            <span class="sub-title">
-                                                                <i class="ti-location-pin"></i>
-                                                                <span>514 S. Magnolia St. Orlando</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Michael Birch</span>
-                                                            <span class="sub-title">
-                                                                <i class="ti-location-pin"></i>
-                                                                <span>70 Bowman St. South Windsor</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="mrg-horizon-20 border top"></div>
-                                        <div class="pdd-vertical-10">
-                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
-                                                <i class="ti-rss pdd-right-5"></i>
-                                                <span>Post</span>
-                                            </span>
-                                            <ul class="list-unstyled list-info">
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="assets/images/img-1.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Artoo expresses his relief</span>
-                                                            <span class="sub-title">
-                                                                <span>Oh, thank goodness we're coming out...</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="assets/images/img-2.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Ready for some power?</span>
-                                                            <span class="sub-title">
-                                                                <span>Lord Vader. You may take Caption So...</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="search-footer">
-                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="notifications dropdown">
-                                <span class="counter">2</span>
-                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                </a>
-
-                                <ul class="dropdown-menu ">
-                                    <li class="notice-header">
-                                        <i class="ti-bell pdd-right-10"></i>
-                                        <span>Notifications</span>
-                                    </li>
-                                    <li>
-                                        <ul class="list-info overflow-y-auto relative scrollable">
-                                            <li>
-                                                <a href="">
-                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
-                                                        <span class="text-gray">commented on your <span class="text-dark">post</span></span>
-                                                        </span>
-                                                        <span class="sub-title">5 mins ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Samuel Field</span>
-                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
-                                                        </span>
-                                                        <span class="sub-title">8 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="thumb-img bg-primary">
-															<span class="text-white">M</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Michael Birch</span>
-                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
-                                                        </span>
-                                                        <span class="sub-title">5 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="thumb-img bg-success">
-														<span class="text-white"><i class="fa fa-paper-plane-o"></i></span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Message sent</span>
-                                                        </span>
-                                                        <span class="sub-title">8 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="thumb-img bg-info">
-														<span class="text-white"><i class="ti-user"></i></span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Admin</span>
-                                                        <span class="text-gray">Welcome on board</span>
-                                                        </span>
-                                                        <span class="sub-title">8 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="notice-footer">
-                                        <span>
-                                            <a href="" class="text-gray">Check all notifications <i class="ei-right-chevron pdd-left-5 font-size-10"></i></a>
-										</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="user-profile dropdown">
-                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="">
-                                            <i class="ti-settings pdd-right-10"></i>
-                                            <span>Setting</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="ti-user pdd-right-10"></i>
-                                            <span>Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="ti-email pdd-right-10"></i>
-                                            <span>Inbox</span>
-                                        </a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-                                    <li>
-                                        <a href="">
-                                            <i class="ti-power-off pdd-right-10"></i>
-                                            <span>Logout</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="side-panel-toggle" href="javascript:void(0);">
-                                    <i class="ti-align-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Header END -->
-
-                <!-- theme configurator START -->
-                <div class="theme-configurator">
-                    <div class="configurator-wrapper">
-                        <div class="config-header">
-                            <h4 class="config-title">Config Panel</h4>
-                            <button class="config-close">
-                                <i class="ti-close"></i>
-                            </button>
-                        </div>
-                        <div class="config-body">
-                            <div class="mrg-btm-30">
-                                <p class="lead font-weight-normal">Header Color</p>
-                                <div class="theme-colors header-default">
-                                    <input type="radio" id="header-default" name="theme">
-                                    <label for="header-default"></label>
-                                </div>
-                                <div class="theme-colors header-primary">
-                                    <input type="radio" class="primary" id="header-primary" name="theme">
-                                    <label for="header-primary"></label>
-                                </div>
-                                <div class="theme-colors header-info">
-                                    <input type="radio" id="header-info" name="theme">
-                                    <label for="header-info"></label>
-                                </div>
-                                <div class="theme-colors header-success">
-                                    <input type="radio" id="header-success" name="theme">
-                                    <label for="header-success"></label>
-                                </div>
-                                <div class="theme-colors header-danger">
-                                    <input type="radio" id="header-danger" name="theme">
-                                    <label for="header-danger"></label>
-                                </div>
-                                <div class="theme-colors header-dark">
-                                    <input type="radio" id="header-dark" name="theme">
-                                    <label for="header-dark"></label>
-                                </div>
-                            </div>
-                            <div class="mrg-btm-30">
-                                <p class="lead font-weight-normal">Sidebar Color</p>
-                                <div class="theme-colors sidenav-default">
-                                    <input type="radio" id="sidenav-default" name="sidenav">
-                                    <label for="sidenav-default"></label>
-                                </div>
-                                <div class="theme-colors side-nav-dark">
-                                    <input type="radio" id="side-nav-dark" name="sidenav">
-                                    <label for="side-nav-dark"></label>
-                                </div>
-                            </div>
-                            <div class="mrg-btm-30">
-                                <p class="lead font-weight-normal no-mrg-btm">RTL</p>
-                                <div class="toggle-checkbox checkbox-inline toggle-sm mrg-top-10">
-                                    <input type="checkbox" name="rtl-toogle" id="rtl-toogle">
-                                    <label for="rtl-toogle"></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- theme configurator END -->
-
-                <!-- Content Wrapper START -->
-                <div class="main-content">
-                    <div class="container-fluid business-list">
-                        <div class="d-flex flex-wrap justify-content-between">
-                            <div class="page-title">
-                                <h4 class="text-bold">POS Configuration Dashboard</h4>
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <label class="text-bold text-dark pr-3 align-self-center mb-0">
-                                    Configure POS Type
-                                </label>
-                                <div class="align-self-center select-size">
-                                    <select id="selectize-dropdown">
-                                        <option value="" disabled selected>Select a option...</option>
-                                        <option value="4">Aloha TS/Q</option>
-                                        <option value="1">Aloha TS/S</option>
-                                        <option value="3">Aloha T/QS</option>
-                                        <option value="5">Aloha S/QS</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="clerfix border bottom">
-                                        <div class="card-block padding-15">
-                                            <div class="list-info">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
-                                                <div class="info">
-                                                    <span class="title text-bold">SmashBurger</span>
-                                                    <span class="sub-title">Default Aloha QS/TS Policy</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clerfix">
-                                        <div class="card-block padding-15">
-                                            <div class="d-flex flex-wrap justify-content-between">
-                                                <p class="align-self-center text-dark mb-0">There are no default policy defined for this business. Please create a new policy.</p>
-                                                <div class="align-self-center">
-                                                    <button class="btn btn-default btn-default-blue mr-0 mb-0 align-self-center">Create Default Policy</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Content Wrapper END -->
-
-                <!-- Footer START -->
-                <footer class="content-footer">
-                    <div class="footer">
-                        <div class="copyright">
-                            <span><b class="text-dark">Punchh</b> © 2019</span>
-                            <span class="go-right">
-                                <a href="" class="text-gray mrg-right-15">Status</a>
-                                <a href="" class="text-gray mrg-right-15">Developers</a>
-                                <a href="" class="text-gray mrg-right-15">Contact</a>
-                                <a href="" class="text-gray mrg-right-15">About</a>
-                                <a href="" class="text-gray mrg-right-15">Blog</a>
-                                <a href="" class="text-gray mrg-right-15">Security</a>
-                                <a href="" class="text-gray mrg-right-15">Privacy</a>
-							</span>
-                        </div>
-                    </div>
-                </footer>
-                <!-- Footer END -->
-
-            </div>
-            <!-- Page Container END -->
-
+            <ul class="side-nav-menu scrollable">
+              <li class="nav-item active">
+                <a class="mrg-top-30" href="index.html">
+                <span class="icon-holder">
+                <i class="ti-home"></i>
+                </span>
+                <span class="title">Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="javascript:void(0);">
+                <span class="icon-holder">
+                <i class="ei-luggage"></i>
+                </span>
+                <span class="title">Businesses</span>
+                <span class="arrow">
+                <i class="ti-angle-right"></i>
+                </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="javascript:void(0);">
+                <span class="icon-holder">
+                <i class="ei-tools"></i>
+                </span>
+                <span class="title">Settings</span>
+                <span class="arrow">
+                <i class="ti-angle-right"></i>
+                </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- Side Nav END -->
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Header START -->
+          <div class="header navbar">
+            <div class="header-container">
+              <ul class="nav-left">
+                <li>
+                  <a class="side-nav-toggle" href="javascript:void(0);">
+                  <i class="ti-view-grid"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav-right">
+                <li class="search-box">
+                  <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                  <i class="search-icon ti-search pdd-right-10"></i>
+                  <i class="search-icon-close ti-close pdd-right-10"></i>
+                  </a>
+                </li>
+                <li class="search-input">
+                  <input class="form-control" type="text" placeholder="Search...">
+                  <div class="advanced-search">
+                    <div class="search-wrapper">
+                      <div class="pdd-vertical-10">
+                        <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+                        <i class="ti-user pdd-right-5"></i>
+                        <span>People</span>
+                        </span>
+                        <ul class="list-unstyled list-info">
+                          <li>
+                            <a href="">
+                              <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                              <div class="info">
+                                <span class="title">Backer Drive & Sans</span>
+                                <span class="sub-title">
+                                <i class="ti-location-pin"></i>
+                                <span>44 Shirley Ave. West Chicago</span>
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                              <div class="info">
+                                <span class="title">Jennifer Watkins</span>
+                                <span class="sub-title">
+                                <i class="ti-location-pin"></i>
+                                <span>514 S. Magnolia St. Orlando</span>
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                              <div class="info">
+                                <span class="title">Michael Birch</span>
+                                <span class="sub-title">
+                                <i class="ti-location-pin"></i>
+                                <span>70 Bowman St. South Windsor</span>
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mrg-horizon-20 border top"></div>
+                      <div class="pdd-vertical-10">
+                        <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+                        <i class="ti-rss pdd-right-5"></i>
+                        <span>Post</span>
+                        </span>
+                        <ul class="list-unstyled list-info">
+                          <li>
+                            <a href="">
+                              <img class="thumb-img" src="assets/images/img-1.jpg" alt="">
+                              <div class="info">
+                                <span class="title">Artoo expresses his relief</span>
+                                <span class="sub-title">
+                                <span>Oh, thank goodness we're coming out...</span>
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img class="thumb-img" src="assets/images/img-2.jpg" alt="">
+                              <div class="info">
+                                <span class="title">Ready for some power?</span>
+                                <span class="sub-title">
+                                <span>Lord Vader. You may take Caption So...</span>
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="search-footer">
+                      <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="notifications dropdown">
+                  <span class="counter">2</span>
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="ti-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu ">
+                    <li class="notice-header">
+                      <i class="ti-bell pdd-right-10"></i>
+                      <span>Notifications</span>
+                    </li>
+                    <li>
+                      <ul class="list-info overflow-y-auto relative scrollable">
+                        <li>
+                          <a href="">
+                            <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                            <div class="info">
+                              <span class="title">
+                              <span class="font-size-14 text-semibold">Jennifer Watkins</span>
+                              <span class="text-gray">commented on your <span class="text-dark">post</span></span>
+                              </span>
+                              <span class="sub-title">5 mins ago</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                            <div class="info">
+                              <span class="title">
+                              <span class="font-size-14 text-semibold">Samuel Field</span>
+                              <span class="text-gray">likes your <span class="text-dark">photo</span></span>
+                              </span>
+                              <span class="sub-title">8 hours ago</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span class="thumb-img bg-primary">
+                            <span class="text-white">M</span>
+                            </span>
+                            <div class="info">
+                              <span class="title">
+                              <span class="font-size-14 text-semibold">Michael Birch</span>
+                              <span class="text-gray">likes your <span class="text-dark">photo</span></span>
+                              </span>
+                              <span class="sub-title">5 hours ago</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span class="thumb-img bg-success">
+                            <span class="text-white"><i class="fa fa-paper-plane-o"></i></span>
+                            </span>
+                            <div class="info">
+                              <span class="title">
+                              <span class="font-size-14 text-semibold">Message sent</span>
+                              </span>
+                              <span class="sub-title">8 hours ago</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span class="thumb-img bg-info">
+                            <span class="text-white"><i class="ti-user"></i></span>
+                            </span>
+                            <div class="info">
+                              <span class="title">
+                              <span class="font-size-14 text-semibold">Admin</span>
+                              <span class="text-gray">Welcome on board</span>
+                              </span>
+                              <span class="sub-title">8 hours ago</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="notice-footer">
+                      <span>
+                      <a href="" class="text-gray">Check all notifications <i class="ei-right-chevron pdd-left-5 font-size-10"></i></a>
+                      </span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="user-profile dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="">
+                      <i class="ti-settings pdd-right-10"></i>
+                      <span>Setting</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                      <i class="ti-user pdd-right-10"></i>
+                      <span>Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                      <i class="ti-email pdd-right-10"></i>
+                      <span>Inbox</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                      <a href="">
+                      <i class="ti-power-off pdd-right-10"></i>
+                      <span>Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="side-panel-toggle" href="javascript:void(0);">
+                  <i class="ti-align-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Header END -->
+          <!-- theme configurator START -->
+          <div class="theme-configurator">
+            <div class="configurator-wrapper">
+              <div class="config-header">
+                <h4 class="config-title">Config Panel</h4>
+                <button class="config-close">
+                <i class="ti-close"></i>
+                </button>
+              </div>
+              <div class="config-body">
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal">Header Color</p>
+                  <div class="theme-colors header-default">
+                    <input type="radio" id="header-default" name="theme">
+                    <label for="header-default"></label>
+                  </div>
+                  <div class="theme-colors header-primary">
+                    <input type="radio" class="primary" id="header-primary" name="theme">
+                    <label for="header-primary"></label>
+                  </div>
+                  <div class="theme-colors header-info">
+                    <input type="radio" id="header-info" name="theme">
+                    <label for="header-info"></label>
+                  </div>
+                  <div class="theme-colors header-success">
+                    <input type="radio" id="header-success" name="theme">
+                    <label for="header-success"></label>
+                  </div>
+                  <div class="theme-colors header-danger">
+                    <input type="radio" id="header-danger" name="theme">
+                    <label for="header-danger"></label>
+                  </div>
+                  <div class="theme-colors header-dark">
+                    <input type="radio" id="header-dark" name="theme">
+                    <label for="header-dark"></label>
+                  </div>
+                </div>
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal">Sidebar Color</p>
+                  <div class="theme-colors sidenav-default">
+                    <input type="radio" id="sidenav-default" name="sidenav">
+                    <label for="sidenav-default"></label>
+                  </div>
+                  <div class="theme-colors side-nav-dark">
+                    <input type="radio" id="side-nav-dark" name="sidenav">
+                    <label for="side-nav-dark"></label>
+                  </div>
+                </div>
+                <div class="mrg-btm-30">
+                  <p class="lead font-weight-normal no-mrg-btm">RTL</p>
+                  <div class="toggle-checkbox checkbox-inline toggle-sm mrg-top-10">
+                    <input type="checkbox" name="rtl-toogle" id="rtl-toogle">
+                    <label for="rtl-toogle"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- theme configurator END -->
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid business-list">
+              <div class="d-flex flex-wrap justify-content-between">
+                <div class="page-title">
+                  <h4 class="text-bold">POS Configuration Dashboard</h4>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <label class="text-bold text-dark pr-3 align-self-center mb-0">
+                  Configure POS Type
+                  </label>
+                  <div class="align-self-center select-size">
+                    <select id="selectize-dropdown">
+                      <option value="" disabled selected>Select a option...</option>
+                      <option value="4">Aloha TS/Q</option>
+                      <option value="1">Aloha TS/S</option>
+                      <option value="3">Aloha T/QS</option>
+                      <option value="5">Aloha S/QS</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="clerfix border bottom">
+                      <div class="card-block padding-15">
+                        <div class="list-info">
+                          <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                          <div class="info">
+                            <span class="title text-bold">SmashBurger</span>
+                            <span class="sub-title">Default Aloha QS/TS Policy</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clerfix">
+                      <div class="card-block padding-15">
+                        <div class="d-flex flex-wrap justify-content-between">
+                          <p class="align-self-center text-dark mb-0">There are no default policy defined for this business. Please create a new policy.</p>
+                          <div class="align-self-center">
+                            <button class="btn btn-default btn-default-blue mr-0 mb-0 align-self-center">Create Default Policy</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+          <!-- Footer START -->
+          <footer class="content-footer">
+            <div class="footer">
+              <div class="copyright">
+                <span><b class="text-dark">Punchh</b> © 2019</span>
+                <span class="go-right">
+                <a href="" class="text-gray mrg-right-15">Status</a>
+                <a href="" class="text-gray mrg-right-15">Developers</a>
+                <a href="" class="text-gray mrg-right-15">Contact</a>
+                <a href="" class="text-gray mrg-right-15">About</a>
+                <a href="" class="text-gray mrg-right-15">Blog</a>
+                <a href="" class="text-gray mrg-right-15">Security</a>
+                <a href="" class="text-gray mrg-right-15">Privacy</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
     </div>
-
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -462,12 +446,10 @@
     <script src="../bower_components/PACE/pace.min.js"></script>
     <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
     <!-- endbuild -->
-
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="assets/js/app.js"></script>
     <!-- endbuild -->
-
     <!-- page plugins js -->
     <script src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
     <script src="../bower_components/moment/min/moment.min.js"></script>
@@ -475,18 +457,16 @@
     <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
     <script src="../bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
     <script src="../bower_components/summernote/dist/summernote.min.js"></script>
-
     <!-- page js -->
     <script src="assets/js/forms/form-elements.js"></script>
-
     <style type="text/css">
-        .btn-default-blue {
-          color: #5688D3 !important;
-          border-color: #5688D3 !important;
-        }
-        .select-size .selectize-input {
-            width: 200px;
-        }
+      .btn-default-blue {
+      color: #5688D3 !important;
+      border-color: #5688D3 !important;
+      }
+      .select-size .selectize-input {
+      width: 200px;
+      }
     </style>
-</body>
+  </body>
 </html>
