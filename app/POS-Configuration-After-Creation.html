@@ -13,6 +13,8 @@
     <!-- page plugins css -->
     <link rel="stylesheet" href="../bower_components/selectize/dist/css/selectize.default.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="../bower_components/datatables/media/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
     <link rel="stylesheet" href="../bower_components/summernote/dist/summernote.css" />
     <!-- core css -->
@@ -342,7 +344,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <div class="card">
+                  <div class="card clerfix">
                     <div class="clerfix border bottom">
                       <div class="card-block padding-15">
                         <div class="d-flex justify-content-between">
@@ -398,15 +400,946 @@
                       </div>
                     </div>
                   </div>
-                  <div class="clerfix">
-                    <div class="card">
+                  <div class="card clerfix">
+                    <div class="clerfix border bottom">
                       <div class="card-block padding-15">
-                        <div class="d-flex flex-wrap justify-content-between">
-                          <p class="align-self-center text-dark mb-0">There are no default policy defined for this business. Please create a new policy.</p>
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex flex-wrap justify-content-between">
+                            <label class="text-bold text-dark pr-3 align-self-center mb-0">
+                            Brand Overrided Policies
+                            </label>
+                            <div class="align-self-center select-size">
+                              <select id="selectize-group">
+                                  <option value="" selected>No Policy Selected</option>
+                                  <optgroup label="Climbing">
+                                      <option value="4">Policy 1</option>
+                                      <option value="1">Policy 2</option>
+                                      <option value="3">Policy 3</option>
+                                      <option value="5">Policy 4</option>
+                                  </optgroup>
+                              </select>
+                            </div>
+                          </div>
                           <div class="align-self-center">
-                            <button class="btn btn-default btn-default-blue mr-0 mb-0 align-self-center">Create New Policy</button>
+                            <button data-toggle="modal" data-target="
+                              #view-policy" class="btn btn-default btn-default-blue btn-sm text-center">View Policy</button>
+                            <button data-toggle="modal" data-target="#edit-policy" class="btn btn-default btn-default-blue btn-sm text-center">Edit Policy</button>
+                            <button data-toggle="modal" data-target="#delete-policy" class="btn btn-default btn-default-red btn-sm text-center">Delete Policy</button>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="clerfix border bottom">
+                      <div class="card-block padding-15">
+                        <div class="d-flex flex-wrap justify-content-between">
+                          <div class="list-info align-self-center">
+                            <div class="info pl-0">
+                              <span class="title text-bold">SmashBurger</span>
+                              <span class="sub-title mw-100">Default Aloha QS/TS Policy</span>
+                            </div>
+                          </div>
+                          <div class="list-info align-self-center">
+                            <div class="info pl-0">
+                              <span class="title text-bold">SmashBurger</span>
+                              <span class="sub-title mw-100">Default Aloha QS/TS Policy</span>
+                            </div>
+                          </div>
+                          <div class="list-info align-self-center">
+                            <div class="info pl-0">
+                              <span class="title text-bold">SmashBurger</span>
+                              <span class="sub-title mw-100">Default Aloha QS/TS Policy</span>
+                            </div>
+                          </div>
+                          <div class="list-info align-self-center">
+                            <div class="info pl-0">
+                              <span class="title text-bold">SmashBurger</span>
+                              <span class="sub-title mw-100">Default Aloha QS/TS Policy</span>
+                            </div>
+                          </div>
+                          <div class="list-info align-self-center">
+                            <div class="info pl-0">
+                              <span class="title text-bold">SmashBurger</span>
+                              <span class="sub-title mw-100">Default Aloha QS/TS Policy</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clerfix">
+                      <div class="table-overflow">
+                        <table id="dt-opt" class="table table-lg table-hover">
+                          <thead>
+                            <tr>
+                              <th>Location ID</th>
+                              <th>Store Number</th>
+                              <th>Location Name</th>
+                              <th>City</th>
+                              <th>State</th>
+                              <th>Status</th>
+                              <th>action</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-dark">
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                273622
+                              </td>
+                              <td>
+                                281
+                              </td>
+                              <td>
+                                Texas - First Avenue
+                              </td>
+                              <td>
+                                Austin
+                              </td>
+                              <td>
+                                Texas
+                              </td>
+                              <td>
+                                Approved
+                              </td>
+                              <td class="p-1">
+                                <div class="mrg-top-10 text-center">
+                                  <button type="button" class="btn btn-icon btn-flat btn-rounded"  text-info data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                    <img src="./assets/images/icons/tasks-solid.svg" height="20" width="20">
+                                  </button>
+                                  <div class="tooltip bs-tooltip-top" role="tooltip">
+                                    <div class="arrow"></div>
+                                    <div class="tooltip-inner">
+                                      Deassociate Policy
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -1260,6 +2193,27 @@
               </div>
             </div>
           </div>
+          <div class="modal fade" id="delete-policy">
+              <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="text-center">
+                          <div class="d-inline-block mt-5 mb-5">
+                            <span class="rounded-circle btn-danger p-3 text-white">
+                              <img src="./assets/images/icons/trash-alt-regular.svg" height="20" width="auto">
+                            </span>
+                          </div>
+                          <h3>Are you sure want to delete policy?</h3>
+                          <p>If you delete this policy, associated locations will be set the policies<br>to its brand default policy. </p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-default button-previous btn-default-blue"  data-dismiss="modal">Close</button>
+                        <button class="btn btn-danger">Delete</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
           <!-- Footer START -->
           <footer class="content-footer">
             <div class="footer">
@@ -1282,6 +2236,7 @@
         <!-- Page Container END -->
       </div>
     </div>
+
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -1289,23 +2244,83 @@
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../bower_components/PACE/pace.min.js"></script>
     <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+
     <!-- endbuild -->
-    <!-- build:js assets/js/app.min.js -->
-    <!-- core js -->
     <script src="assets/js/app.js"></script>
     <!-- endbuild -->
-    <!-- page plugins js -->
-    <script src="../bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
-    <script src="../bower_components/moment/min/moment.min.js"></script>
-    <script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-    <script src="../bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
-    <script src="../bower_components/summernote/dist/summernote.min.js"></script>
     <!-- page js -->
     <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="../bower_components/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
     <script src="assets/js/forms/form-elements.js"></script>
-
+    <!-- page plugins js -->
+    <script src="../bower_components/datatables/media/js/jquery.dataTables.js"></script>
+    <!-- page js -->
+    <script src="assets/js/table/data-table.js"></script>
+    <style type="text/css">
+      .dataTables_length label,
+      .dataTables_filter label {
+      margin: 0px;
+      }
+      .dataTables_length,
+      .dataTables_filter,
+      .dataTables_info,
+      .dataTables_paginate {
+      padding: 15px;
+      }
+      .dataTables_info,
+      .dataTables_paginate {
+      padding-top: 0px !important;
+      }
+      .btn-default-blue {
+      color: #5688D3 !important;
+      border-color: #5688D3 !important;
+      }
+      .btn-primary {
+      background-color: #5688D3 !important;
+      color: #ffffff !important;
+      border-color: #5688D3 !important;
+      }
+      .btn-primary:hover,
+      .btn-primary:focus {
+      background-color: #6a96d8 !important;
+      border-color: #6a96d8 !important;
+      }
+      .tab-info.center-tabs .nav-tabs{
+      border: none;
+      }
+      .tab-info.center-tabs .nav-tabs .nav-item:first-child .nav-link {
+      border-radius: 100px 0 0 100px;
+      border-right: none;
+      }
+      .tab-info.center-tabs .nav-tabs .nav-item:last-child .nav-link {
+      border-radius: 0 100px 100px 0;
+      border-left: none;
+      }
+      .tab-info.center-tabs .nav-tabs .nav-link {
+      border-radius: 100px;
+      border: solid 1px #E6ECF5;
+      }
+      .tab-info.center-tabs .nav-tabs .nav-link.active {
+      background-color: #313643;
+      border-color: #313643;
+      border-bottom: none;
+      color: #ffffff;
+      }
+      .tab-info.center-tabs .nav-tabs .nav-link {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      }
+      .configuration-holder {
+      background-color: #E6ECF5;
+      }
+      .dataTable thead {
+      background-color: #FBFBFC;
+      }
+      .modal-footer {
+        background-color: #ffffff;
+      }
+    </style>
     <style type="text/css">
       .btn-default-blue {
       color: #5688D3 !important;
@@ -1329,6 +2344,15 @@
       .nav-pills > li > a {
       font-size: 13px;
       }
+      .btn-default-red {
+        border-color: #ff3c7e;
+        color: #ff3c7e;
+      }
     </style>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
